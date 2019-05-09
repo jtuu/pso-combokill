@@ -45,7 +45,7 @@ function combo_kill(attacker, weapon, defender, accuracy_treshold) {
         // check combo accuracy
         for (let step = 0; step < combo.length; step++) {
             const attack_kind = combo[step];
-            const accuracy = attack_accuracy(attack_kind, step, attacker.ata, defender.evp);
+            const accuracy = attack_accuracy(attack_kind, step, attacker.ATA, defender.EVP);
             if (accuracy < accuracy_treshold) {
                 continue combos;
             }
@@ -53,10 +53,10 @@ function combo_kill(attacker, weapon, defender, accuracy_treshold) {
         // sum combo damage
         for (let step = 0; step < combo.length; step++) {
             const attack_kind = combo[step];
-            combo_dmg += attack_damage(attack_kind, attacker.atp, defender.dfp) * weapon_hit_counts[weapon.kind][step];
+            combo_dmg += attack_damage(attack_kind, attacker.ATP, defender.DFP) * weapon_hit_counts[weapon.kind][step];
         }
         // did it die?
-        if (combo_dmg >= defender.hp) {
+        if (combo_dmg >= defender.HP) {
             return combo;
         }
     }
