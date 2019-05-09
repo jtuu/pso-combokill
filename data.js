@@ -65,13 +65,46 @@ const EPISODE_1 = 0;
 const EPISODE_2 = 1;
 const EPISODE_4 = 2;
 
+const episodes = [
+    EPISODE_1,
+    EPISODE_2,
+    EPISODE_4
+];
+
+const episode_names = [];
+episode_names[EPISODE_1] = "Episode 1";
+episode_names[EPISODE_2] = "Episode 2";
+episode_names[EPISODE_4] = "Episode 4";
+
 const DIFFICULTY_N  = 0;
 const DIFFICULTY_H  = 1;
 const DIFFICULTY_VH = 2;
 const DIFFICULTY_U  = 3;
 
+const difficulties = [
+    DIFFICULTY_N,
+    DIFFICULTY_H,
+    DIFFICULTY_VH,
+    DIFFICULTY_U
+];
+
+const difficulty_names = [];
+difficulty_names[DIFFICULTY_N] = "Normal";
+difficulty_names[DIFFICULTY_H] = "Hard";
+difficulty_names[DIFFICULTY_VH] = "Very Hard";
+difficulty_names[DIFFICULTY_U] = "Ultimate";
+
 const GAME_MODE_MULTI = 0;
 const GAME_MODE_SOLO  = 1;
+
+const game_modes = [
+    GAME_MODE_MULTI,
+    GAME_MODE_SOLO
+];
+
+const game_mode_names = [];
+game_mode_names[GAME_MODE_MULTI] = "Multiplayer";
+game_mode_names[GAME_MODE_SOLO] = "Solomode";
 
 const HUMAR     = 0;
 const HUNEWEARL = 1;

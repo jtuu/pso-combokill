@@ -129,3 +129,81 @@ async function get_character_data(character) {
     }
     return character_data[character_name];
 }
+
+const UI = {
+    selected_character: HUCAST,
+    selected_episode: EPISODE_1,
+    selected_difficulty: DIFFICULTY_U,
+    selected_game_mode: GAME_MODE_MULTI
+};
+
+function create_select(values, names, default_val) {
+    const select = document.createElement("select");
+    for (const value of values) {
+        const option = document.createElement("option");
+        if (value == default_val) {
+            option.selected = true;
+        }
+        option.value = value;
+        option.textContent = names[value];
+        select.appendChild(option);
+    }
+    return select;
+}
+
+function create_enemy_table() {
+    const table_container = document.createElement("div");
+    const table_header = document.createElement("div");
+    const episode_select = create_select(episodes, episode_names, UI.selected_episode);
+    const difficulty_select = create_select(difficulties, difficulty_names, UI.selected_difficulty);
+    const mode_select = create_select(game_modes, game_mode_names, UI.selected_game_mode);
+    episode_select.addEventListener("change", update_enemy_table.bind(null, "selected_episode"));
+    difficulty_select.addEventListener("change", update_enemy_table.bind(null, "selected_difficulty"));
+    mode_select.addEventListener("change", update_enemy_table.bind(null, "selected_game_mode"));
+    table_header.append(episode_select, difficulty_select, mode_select);
+    const table_body = UI.enemy_table_body = document.createElement("div");
+    table_body.className = "enemy_table_body";
+    table_container.append(table_header, table_body);
+    update_enemy_table();
+    return table_container;
+}
+
+async function update_enemy_table(select_value_key, event) {
+    if (event) {
+        UI[select_value_key] = event.target.selectedIndex;
+    }
+    const table_body = UI.enemy_table_body;
+    if (table_body.childElementCount > 0) {
+        const delete_range = document.createRange();
+        delete_range.setStartBefore(table_body.firstChild, 0);
+        delete_range.setEndAfter(table_body.lastChild, 0);
+        delete_range.deleteContents();
+    }
+    const character_data = await get_character_data(UI.selected_character);
+    const enemy_data = await get_enemy_data(UI.selected_episode, UI.selected_difficulty, UI.selected_game_mode);
+    for (const enemy of enemy_data) {
+        const cell = document.createElement("div");
+        cell.className = "enemy_cell";
+        const name_el = document.createElement("div");
+        name_el.textContent = enemy.name;
+        const combo_el = document.createElement("div");
+        const combo = combo_kill(character_data[200], {kind: WEAPON_MECHGUN}, enemy, 100);
+        combo_el.textContent = combo_to_string(combo);
+        cell.append(name_el, combo_el);
+        table_body.appendChild(cell);
+    }
+}
+
+function create_ui() {
+    const control_panel = UI.control_panel = document.createElement("div");
+    const character_select = create_select(character_classes, character_names, UI.selected_character);
+    const enemy_table = create_enemy_table();
+    control_panel.append(character_select, enemy_table);
+    document.body.appendChild(control_panel);
+}
+
+function main() {
+    create_ui();
+}
+
+main();
