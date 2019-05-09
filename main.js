@@ -38,21 +38,6 @@ const glitch_combos = (function make_glitch_combos() {
     return combos;
 })();
 
-const racast = {
-    atp: 1350,
-    ata: 224
-};
-
-const cvulc = {
-    kind: WEAPON_MECHGUN
-};
-
-const bartle = {
-  hp: 2335,
-  dfp: 600,
-  evp: 593
-};
-
 function combo_kill(attacker, weapon, defender, accuracy_treshold) {
     combos:
     for (const combo of normal_combos) {
