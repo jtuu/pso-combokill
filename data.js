@@ -60,3 +60,15 @@ weapon_hit_counts[WEAPON_CANE]         = [1, 1, 1];
 weapon_hit_counts[WEAPON_ROD]          = [1, 1, 1];
 weapon_hit_counts[WEAPON_WAND]         = [1, 1, 1];
 weapon_hit_counts[WEAPON_CARD]         = [1, 1, 3];
+
+const EPISODE_1 = 0;
+const EPISODE_2 = 1;
+const EPISODE_4 = 2;
+
+const DIFFICULTY_N  = 0;
+const DIFFICULTY_H  = 1;
+const DIFFICULTY_VH = 2;
+const DIFFICULTY_U  = 3;
+
+const GAME_MODE_MULTI = 0;
+const GAME_MODE_SOLO  = 1;

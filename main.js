@@ -77,3 +77,58 @@ function combo_kill(attacker, weapon, defender, accuracy_treshold) {
     }
     return null;
 }
+
+const enemy_data = {};
+
+async function get_enemy_data(episode, difficulty, game_mode) {
+    let episode_name = "";
+    let difficulty_name = "";
+    let game_mode_name = "";
+    switch (episode) {
+    case EPISODE_1:
+        episode_name = "1";
+        break;
+    case EPISODE_2:
+        episode_name = "2";
+        break;
+    case EPISODE_4:
+        episode_name = "4";
+        break;
+    default:
+        throw new TypeError("Invalid argument: episode");
+    }
+    switch (difficulty) {
+    case DIFFICULTY_N:
+        difficulty_name = "n";
+        break;
+    case DIFFICULTY_H:
+        difficulty_name = "h";
+        break;
+    case DIFFICULTY_VH:
+        difficulty_name = "vh";
+        break;
+    case DIFFICULTY_U:
+        difficulty_name = "u";
+        break;
+    default:
+        throw new TypeError("Invalid argument: difficulty");
+    }
+    switch (game_mode) {
+    case GAME_MODE_MULTI:
+        game_mode_name = "online";
+        break;
+    case GAME_MODE_SOLO:
+        game_mode_name = "offline";
+        break;
+    default:
+        throw new TypeError("Invalid argument: game_mode");
+    }
+    const data_key = `ep${episode_name}_${difficulty_name}_${game_mode_name}`;
+    // download if not cached
+    if (!enemy_data.hasOwnProperty(data_key)) {
+        const file_path = `/enemy_data/${data_key}.json`;
+        const data = await fetch(file_path).then(res => res.json());
+        enemy_data[data_key] = data;
+    }
+    return enemy_data[data_key];
+}
