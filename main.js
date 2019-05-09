@@ -117,3 +117,15 @@ async function get_enemy_data(episode, difficulty, game_mode) {
     }
     return enemy_data[data_key];
 }
+
+const character_data = {};
+
+async function get_character_data(character) {
+    const character_name = character_names[character];
+    if (!character_data.hasOwnProperty(character_name)) {
+        const file_path = `/character_data/${character_name.toLowerCase()}.json`;
+        const data = await fetch(file_path).then(res => res.json());
+        character_data[character_name] = data;
+    }
+    return character_data[character_name];
+}

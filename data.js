@@ -72,3 +72,45 @@ const DIFFICULTY_U  = 3;
 
 const GAME_MODE_MULTI = 0;
 const GAME_MODE_SOLO  = 1;
+
+const HUMAR     = 0;
+const HUNEWEARL = 1;
+const HUCAST    = 2;
+const HUCASEAL  = 3;
+const RAMAR     = 4;
+const RAMARL    = 5;
+const RACAST    = 6;
+const RACASEAL  = 7;
+const FOMAR     = 8;
+const FOMARL    = 9;
+const FONEWM    = 10;
+const FONEWEARL = 11;
+
+const character_classes = [
+    HUMAR,
+    HUNEWEARL,
+    HUCAST,
+    HUCASEAL,
+    RAMAR,
+    RAMARL,
+    RACAST,
+    RACASEAL,
+    FOMAR,
+    FOMARL,
+    FONEWM,
+    FONEWEARL
+];
+
+const character_names = [];
+character_names[HUMAR]      = "HUmar";
+character_names[HUNEWEARL]  = "HUnewearl";
+character_names[HUCAST]     = "HUcast";
+character_names[HUCASEAL]   = "HUcaseal";
+character_names[RAMAR]      = "RAmar";
+character_names[RAMARL]     = "RAmarl";
+character_names[RACAST]     = "RAcast";
+character_names[RACASEAL]   = "RAcaseal";
+character_names[FOMAR]      = "FOmar";
+character_names[FOMARL]     = "FOmarl";
+character_names[FONEWM]     = "FOnewm";
+character_names[FONEWEARL]  = "FOnewearl";
