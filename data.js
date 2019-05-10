@@ -147,3 +147,11 @@ character_names[FOMAR]      = "FOmar";
 character_names[FOMARL]     = "FOmarl";
 character_names[FONEWM]     = "FOnewm";
 character_names[FONEWEARL]  = "FOnewearl";
+
+const NUM_CHARACTER_LEVELS = 200;
+const CHARACTER_MAX_STATS_IDX = 200;
+
+const character_stat_names = [
+    "ATP",
+    "ATA"
+];

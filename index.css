@@ -44,3 +44,19 @@ body {
 .enemy_table > .enemy_table_body > .enemy_cell.combo_fail {
     background: rgb(255, 180, 180);
 }
+
+.character_settings > * {
+    margin-right: 0.2em;
+}
+
+.character_settings > .character_stat {
+    display: inline-block;
+}
+
+.character_settings > .character_stat > label {
+    display: block;
+}
+
+.character_settings > .character_stat > input {
+    width: 5em;
+}

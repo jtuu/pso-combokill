@@ -131,10 +131,15 @@ async function get_character_data(character) {
 }
 
 const UI = {
-    selected_character: HUCAST,
+    character_stats: {
+        class: HUCAST,
+        level: CHARACTER_MAX_STATS_IDX
+    },
+    character_stat_elements: {},
     selected_episode: EPISODE_1,
     selected_difficulty: DIFFICULTY_U,
-    selected_game_mode: GAME_MODE_MULTI
+    selected_game_mode: GAME_MODE_MULTI,
+    accuracy_treshold: 100
 };
 
 function create_select(values, names, default_val) {
@@ -166,7 +171,6 @@ function create_enemy_table() {
     const table_body = UI.enemy_table_body = document.createElement("div");
     table_body.className = "enemy_table_body";
     table_container.append(table_header, table_body);
-    update_enemy_table();
     return table_container;
 }
 
@@ -181,15 +185,15 @@ async function update_enemy_table(select_value_key, event) {
         delete_range.setEndAfter(table_body.lastChild, 0);
         delete_range.deleteContents();
     }
-    const character_data = await get_character_data(UI.selected_character);
     const enemy_data = await get_enemy_data(UI.selected_episode, UI.selected_difficulty, UI.selected_game_mode);
+    const temp_table_body = document.createDocumentFragment();
     for (const enemy of enemy_data) {
         const cell = document.createElement("div");
         cell.className = "enemy_cell";
         const name_el = document.createElement("div");
         name_el.textContent = enemy.name;
         const combo_el = document.createElement("div");
-        const combo = combo_kill(character_data[200], {kind: WEAPON_MECHGUN}, enemy, 100);
+        const combo = combo_kill(UI.character_stats, {kind: WEAPON_MECHGUN}, enemy, UI.accuracy_treshold);
         if (combo === null) {
             cell.classList.add("combo_fail");
         } else {
@@ -201,16 +205,72 @@ async function update_enemy_table(select_value_key, event) {
         name_container.appendChild(name_el);
         combo_container.appendChild(combo_el);
         cell.append(name_container, combo_container);
-        table_body.appendChild(cell);
+        temp_table_body.appendChild(cell);
     }
+    table_body.appendChild(temp_table_body);
+}
+
+function create_character_settings() {
+    const container = document.createElement("fieldset");
+    container.className = "character_settings";
+    const title = document.createElement("legend");
+    title.textContent = "Character";
+    const character_select = create_select(character_classes, character_names, UI.character_stats.class);
+    character_select.addEventListener("change", update_character_stats.bind(null, "class"));
+    const level_indices = Array(NUM_CHARACTER_LEVELS + 1).fill().map((_, i) => i);
+    const level_names = level_indices.map((_, i) => `Level ${i + 1}`);
+    level_names[CHARACTER_MAX_STATS_IDX] = "Max stats";
+    const level_select = create_select(level_indices, level_names, UI.character_stats.level);
+    level_select.addEventListener("change", update_character_stats.bind(null, "level"));
+    container.append(title, character_select, level_select);
+    for (const stat_name of character_stat_names) {
+        const input_container = document.createElement("div");
+        input_container.className = "character_stat";
+        const label = document.createElement("label");
+        label.textContent = stat_name;
+        const input_el = document.createElement("input");
+        UI.character_stat_elements[stat_name] = input_el;
+        input_el.addEventListener("change", update_character_stats.bind(null, stat_name));
+        input_container.append(label, input_el);
+        container.append(input_container);
+    }
+    return container;
+}
+
+async function update_character_stats(stat_name, event) {
+    if (event) {
+        let new_val = null;
+        try {
+            new_val = parseInt(event.target.value);
+        } catch (ex) {
+            console.warn(`Invalid input value: ${stat_name}`);
+            return;
+        }
+        UI.character_stats[stat_name] = new_val;
+    }
+    switch (stat_name) {
+    case "all":
+    case "class":
+    case "level":
+        const character_data = (await get_character_data(UI.character_stats.class))[UI.character_stats.level];
+        for (const other_stat_name of character_stat_names) {
+            UI.character_stat_elements[other_stat_name].value = UI.character_stats[other_stat_name] = character_data[other_stat_name];
+        }
+        break;
+    default:
+        // no need to update others if stat was edited manually
+        break;
+    }
+    update_enemy_table();
 }
 
 function create_ui() {
     const control_panel = UI.control_panel = document.createElement("div");
-    const character_select = create_select(character_classes, character_names, UI.selected_character);
+    const character_settings = create_character_settings();
     const enemy_table = create_enemy_table();
-    control_panel.appendChild(character_select);
+    control_panel.appendChild(character_settings);
     document.body.append(control_panel, enemy_table);
+    update_character_stats("all");
 }
 
 function main() {
