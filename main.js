@@ -153,7 +153,9 @@ function create_select(values, names, default_val) {
 
 function create_enemy_table() {
     const table_container = document.createElement("div");
+    table_container.className = "enemy_table";
     const table_header = document.createElement("div");
+    table_header.className = "enemy_table_header";
     const episode_select = create_select(episodes, episode_names, UI.selected_episode);
     const difficulty_select = create_select(difficulties, difficulty_names, UI.selected_difficulty);
     const mode_select = create_select(game_modes, game_mode_names, UI.selected_game_mode);
@@ -188,8 +190,17 @@ async function update_enemy_table(select_value_key, event) {
         name_el.textContent = enemy.name;
         const combo_el = document.createElement("div");
         const combo = combo_kill(character_data[200], {kind: WEAPON_MECHGUN}, enemy, 100);
+        if (combo === null) {
+            cell.classList.add("combo_fail");
+        } else {
+            cell.classList.add("combo_success");
+        }
         combo_el.textContent = combo_to_string(combo);
-        cell.append(name_el, combo_el);
+        const name_container = document.createElement("div");
+        const combo_container = document.createElement("div");
+        name_container.appendChild(name_el);
+        combo_container.appendChild(combo_el);
+        cell.append(name_container, combo_container);
         table_body.appendChild(cell);
     }
 }
@@ -198,8 +209,8 @@ function create_ui() {
     const control_panel = UI.control_panel = document.createElement("div");
     const character_select = create_select(character_classes, character_names, UI.selected_character);
     const enemy_table = create_enemy_table();
-    control_panel.append(character_select, enemy_table);
-    document.body.appendChild(control_panel);
+    control_panel.appendChild(character_select);
+    document.body.append(control_panel, enemy_table);
 }
 
 function main() {

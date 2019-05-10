@@ -2,14 +2,45 @@ body {
     font-family: sans-serif;
 }
 
-.enemy_table_body {
+* {
+    box-sizing: border-box;
+}
+
+.enemy_table {
+    border: 1px solid black;
+    margin-top: 1em;
+}
+
+.enemy_table > .enemy_table_header {
+    text-align: center;
+    margin: 1em;
+}
+
+.enemy_table > .enemy_table_body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: 100px;
 }
 
-.enemy_table_body > .enemy_cell {
-    border: 1px solid black;
-    margin: 1px;
-    text-align: center
+.enemy_table > .enemy_table_body > .enemy_cell {
+    outline: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.enemy_table > .enemy_table_body > .enemy_cell > div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enemy_table > .enemy_table_body > .enemy_cell.combo_success {
+    background: rgb(180, 255, 180);
+}
+
+.enemy_table > .enemy_table_body > .enemy_cell.combo_fail {
+    background: rgb(255, 180, 180);
 }
