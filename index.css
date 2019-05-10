@@ -1,5 +1,11 @@
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -7,13 +13,12 @@ body {
 }
 
 .enemy_table {
-    border: 1px solid black;
     margin-top: 1em;
 }
 
 .enemy_table > .enemy_table_header {
     text-align: center;
-    margin: 1em;
+    margin-bottom: 1em;
 }
 
 .enemy_table > .enemy_table_body {
@@ -59,4 +64,8 @@ body {
 
 .character_settings > .character_stat > input {
     width: 5em;
+}
+
+footer {
+    margin-top: auto;
 }

@@ -131,6 +131,7 @@ async function get_character_data(character) {
 }
 
 const UI = {
+    root: document.getElementById("root"),
     character_stats: {
         class: HUCAST,
         level: CHARACTER_MAX_STATS_IDX
@@ -157,8 +158,10 @@ function create_select(values, names, default_val) {
 }
 
 function create_enemy_table() {
-    const table_container = document.createElement("div");
+    const table_container = document.createElement("fieldset");
     table_container.className = "enemy_table";
+    const title = document.createElement("legend");
+    title.textContent = "Optimal combos";
     const table_header = document.createElement("div");
     table_header.className = "enemy_table_header";
     const episode_select = create_select(episodes, episode_names, UI.selected_episode);
@@ -170,7 +173,7 @@ function create_enemy_table() {
     table_header.append(episode_select, difficulty_select, mode_select);
     const table_body = UI.enemy_table_body = document.createElement("div");
     table_body.className = "enemy_table_body";
-    table_container.append(table_header, table_body);
+    table_container.append(title, table_header, table_body);
     return table_container;
 }
 
@@ -269,7 +272,7 @@ function create_ui() {
     const character_settings = create_character_settings();
     const enemy_table = create_enemy_table();
     control_panel.appendChild(character_settings);
-    document.body.append(control_panel, enemy_table);
+    UI.root.append(control_panel, enemy_table);
     update_character_stats("all");
 }
 
