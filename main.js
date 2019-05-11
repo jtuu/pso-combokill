@@ -230,25 +230,22 @@ async function create_character_settings() {
     const title = document.createElement("legend");
     title.textContent = "Character";
     const character_select = create_select(character_classes, character_names, UI.character_stats.class);
+    const character_container = create_labeled_input("Class", character_select).parentElement;
     character_select.addEventListener("change", update_character_stats.bind(null, "class"));
     const level_indices = Array(NUM_CHARACTER_LEVELS + 1).fill().map((_, i) => i);
     const level_names = level_indices.map((_, i) => `Level ${i + 1}`);
     level_names[CHARACTER_MAX_STATS_IDX] = "Max stats";
     const level_select = create_select(level_indices, level_names, UI.character_stats.level);
+    const level_container = create_labeled_input("Stat presets", level_select).parentElement;
     level_select.addEventListener("change", update_character_stats.bind(null, "level"));
-    container.append(title, character_select, level_select);
+    container.append(title, character_container, level_container, create_vertical_rule());
     const character_data = (await get_character_data(UI.character_stats.class))[UI.character_stats.level];
     for (const stat_name of character_stat_names) {
-        const input_container = document.createElement("div");
-        input_container.className = "stat_container";
-        const label = document.createElement("label");
-        label.textContent = stat_name;
-        const input_el = document.createElement("input");
+        const input_el = create_labeled_input(stat_name);
         input_el.value = UI.character_stats[stat_name] = character_data[stat_name];
         UI.character_stat_elements[stat_name] = input_el;
         input_el.addEventListener("change", update_character_stats.bind(null, stat_name));
-        input_container.append(label, input_el);
-        container.append(input_container);
+        container.append(input_el.parentElement);
     }
     return container;
 }
@@ -286,12 +283,8 @@ function create_weapon_settings() {
     title.textContent = "Weapon";
     const weapon_indices = weapon_data.map((_, i) => i);
     const weapon_names = weapon_data.map(weapon => weapon.name);
-    const preset_container = document.createElement("div");
-    preset_container.className = "stat_container";
-    const preset_label = document.createElement("label");
-    preset_label.textContent = "Presets";
     const weapon_select = create_select(weapon_indices, weapon_names, UI.selected_weapon);
-    preset_container.append(preset_label, weapon_select);
+    const preset_container = create_labeled_input("Presets", weapon_select).parentElement;
     weapon_select.addEventListener("change", event => {
         UI.selected_weapon = event.target.selectedIndex;
         const weapon = weapon_data[UI.selected_weapon];
@@ -304,46 +297,39 @@ function create_weapon_settings() {
         update_enemy_table();
     });
     const special_select = UI.weapon_special_select = create_select(special_attacks, special_attack_names, UI.selected_weapon_special);
+    const special_container = create_labeled_input("Special", special_select).parentElement;
     special_select.addEventListener("change", event => {
         UI.selected_weapon_special = event.target.selectedIndex;
         update_enemy_table();
     });
     const kind_select = UI.weapon_kind_select = create_select(weapon_kinds, weapon_kind_names, UI.weapon_stats.kind);
+    const kind_container = create_labeled_input("Kind", kind_select).parentElement;
     kind_select.addEventListener("change", event => {
         UI.weapon_stats.kind = event.target.selectedIndex;
         update_enemy_table();
     });
-    container.append(title, preset_container, kind_select, special_select);
+    container.append(title, preset_container, kind_container, special_container, create_vertical_rule());
     const weapon = weapon_data[UI.selected_weapon];
     UI.weapon_stats.special = special_select.value = weapon.special;
     UI.weapon_stats.kind = kind_select.value = weapon.kind;
     for (const stat of editable_weapon_stats) {
         const stat_name = weapon_stat_names[stat];
         const stat_key = weapon_stat_keys[stat];
-        const input_container = document.createElement("div");
-        input_container.className = "stat_container";
-        const label = document.createElement("label");
-        label.textContent = stat_name;
-        const input_el = document.createElement("input");
+        const input_el = create_labeled_input(stat_name);
         input_el.value = UI.weapon_stats[stat_key] = weapon[stat_key];
         UI.weapon_stat_elements[stat_key] = input_el;
         input_el.addEventListener("change", update_weapon_stats.bind(null, stat));
-        input_container.append(label, input_el);
-        container.append(input_container);
+        container.appendChild(input_el.parentElement);
     }
+    container.appendChild(create_vertical_rule());
     for (const attr of weapon_attributes) {
         const attr_name = weapon_attribute_names[attr];
         const attr_key = weapon_attribute_keys[attr];
-        const input_container = document.createElement("div");
-        input_container.className = "stat_container";
-        const label = document.createElement("label");
-        label.textContent = attr_name;
-        const input_el = document.createElement("input");
+        const input_el = create_labeled_input(attr_name);
         input_el.value = UI.weapon_attributes[attr_key];
         UI.weapon_attribute_elements[attr_key] = input_el;
         input_el.addEventListener("change", update_weapon_attributes.bind(null, attr));
-        input_container.append(label, input_el);
-        container.append(input_container);
+        container.append(input_el.parentElement);
     }
     return container;
 }

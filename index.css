@@ -54,19 +54,25 @@ body {
     margin-right: 0.2em;
 }
 
-.stat_container {
+.labeled_input_container {
     display: inline-block;
 }
 
-.stat_container > label {
+.labeled_input_container > label {
     display: block;
     font-size: 0.8em;
 }
 
-.stat_container > input {
+.labeled_input_container > input {
     width: 5em;
 }
 
+.vertical_rule {
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-left: 1px solid black;
+}
 
 footer {
     margin-top: auto;

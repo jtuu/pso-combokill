@@ -26,3 +26,18 @@ function multichoose(set, r) {
     }
     return result;
 }
+
+function create_labeled_input(label_text, input_el = document.createElement("input")) {
+    const container = document.createElement("div");
+    container.className = "labeled_input_container";
+    const label = document.createElement("label");
+    label.textContent = label_text;
+    container.append(label, input_el);
+    return input_el;
+}
+
+function create_vertical_rule() {
+    const vr = document.createElement("div");
+    vr.className = "vertical_rule";
+    return vr;
+}
