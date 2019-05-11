@@ -140,6 +140,17 @@ const UI = {
     selected_episode: EPISODE_1,
     selected_difficulty: DIFFICULTY_U,
     selected_game_mode: GAME_MODE_MULTI,
+    selected_weapon: weapon_data.findIndex(weapon => weapon.name === "Charge Vulcan"),
+    weapon_stats: {},
+    weapon_stat_elements: {},
+    weapon_attributes: {
+        native: 0,
+        abeast: 0,
+        machine: 0,
+        dark: 0,
+        hit: 0
+    },
+    weapon_attribute_elements: {},
     accuracy_treshold: 100
 };
 
@@ -196,7 +207,7 @@ async function update_enemy_table(select_value_key, event) {
         const name_el = document.createElement("div");
         name_el.textContent = enemy.name;
         const combo_el = document.createElement("div");
-        const combo = combo_kill(UI.character_stats, {kind: WEAPON_MECHGUN}, enemy, UI.accuracy_treshold);
+        const combo = combo_kill(UI.character_stats, UI.weapon_stats, enemy, UI.accuracy_treshold);
         if (combo === null) {
             cell.classList.add("combo_fail");
         } else {
@@ -213,7 +224,7 @@ async function update_enemy_table(select_value_key, event) {
     table_body.appendChild(temp_table_body);
 }
 
-function create_character_settings() {
+async function create_character_settings() {
     const container = document.createElement("fieldset");
     container.className = "character_settings";
     const title = document.createElement("legend");
@@ -226,12 +237,14 @@ function create_character_settings() {
     const level_select = create_select(level_indices, level_names, UI.character_stats.level);
     level_select.addEventListener("change", update_character_stats.bind(null, "level"));
     container.append(title, character_select, level_select);
+    const character_data = (await get_character_data(UI.character_stats.class))[UI.character_stats.level];
     for (const stat_name of character_stat_names) {
         const input_container = document.createElement("div");
-        input_container.className = "character_stat";
+        input_container.className = "stat_container";
         const label = document.createElement("label");
         label.textContent = stat_name;
         const input_el = document.createElement("input");
+        input_el.value = UI.character_stats[stat_name] = character_data[stat_name];
         UI.character_stat_elements[stat_name] = input_el;
         input_el.addEventListener("change", update_character_stats.bind(null, stat_name));
         input_container.append(label, input_el);
@@ -252,7 +265,6 @@ async function update_character_stats(stat_name, event) {
         UI.character_stats[stat_name] = new_val;
     }
     switch (stat_name) {
-    case "all":
     case "class":
     case "level":
         const character_data = (await get_character_data(UI.character_stats.class))[UI.character_stats.level];
@@ -267,13 +279,119 @@ async function update_character_stats(stat_name, event) {
     update_enemy_table();
 }
 
-function create_ui() {
+function create_weapon_settings() {
+    const container = document.createElement("fieldset");
+    container.className = "weapon_settings";
+    const title = document.createElement("legend");
+    title.textContent = "Weapon";
+    const weapon_indices = weapon_data.map((_, i) => i);
+    const weapon_names = weapon_data.map(weapon => weapon.name);
+    const preset_container = document.createElement("div");
+    preset_container.className = "stat_container";
+    const preset_label = document.createElement("label");
+    preset_label.textContent = "Presets";
+    const weapon_select = create_select(weapon_indices, weapon_names, UI.selected_weapon);
+    preset_container.append(preset_label, weapon_select);
+    weapon_select.addEventListener("change", event => {
+        UI.selected_weapon = event.target.selectedIndex;
+        const weapon = weapon_data[UI.selected_weapon];
+        for (const other_stat of editable_weapon_stats) {
+            const stat_key = weapon_stat_keys[other_stat];
+            UI.weapon_stat_elements[stat_key].value = UI.weapon_stats[stat_key] = weapon[stat_key];
+        }
+        UI.weapon_stats.special = UI.weapon_special_select.value = weapon.special;
+        UI.weapon_stats.kind = UI.weapon_kind_select.value = weapon.kind;
+        update_enemy_table();
+    });
+    const special_select = UI.weapon_special_select = create_select(special_attacks, special_attack_names, UI.selected_weapon_special);
+    special_select.addEventListener("change", event => {
+        UI.selected_weapon_special = event.target.selectedIndex;
+        update_enemy_table();
+    });
+    const kind_select = UI.weapon_kind_select = create_select(weapon_kinds, weapon_kind_names, UI.weapon_stats.kind);
+    kind_select.addEventListener("change", event => {
+        UI.weapon_stats.kind = event.target.selectedIndex;
+        update_enemy_table();
+    });
+    container.append(title, preset_container, kind_select, special_select);
+    const weapon = weapon_data[UI.selected_weapon];
+    UI.weapon_stats.special = special_select.value = weapon.special;
+    UI.weapon_stats.kind = kind_select.value = weapon.kind;
+    for (const stat of editable_weapon_stats) {
+        const stat_name = weapon_stat_names[stat];
+        const stat_key = weapon_stat_keys[stat];
+        const input_container = document.createElement("div");
+        input_container.className = "stat_container";
+        const label = document.createElement("label");
+        label.textContent = stat_name;
+        const input_el = document.createElement("input");
+        input_el.value = UI.weapon_stats[stat_key] = weapon[stat_key];
+        UI.weapon_stat_elements[stat_key] = input_el;
+        input_el.addEventListener("change", update_weapon_stats.bind(null, stat));
+        input_container.append(label, input_el);
+        container.append(input_container);
+    }
+    for (const attr of weapon_attributes) {
+        const attr_name = weapon_attribute_names[attr];
+        const attr_key = weapon_attribute_keys[attr];
+        const input_container = document.createElement("div");
+        input_container.className = "stat_container";
+        const label = document.createElement("label");
+        label.textContent = attr_name;
+        const input_el = document.createElement("input");
+        input_el.value = UI.weapon_attributes[attr_key];
+        UI.weapon_attribute_elements[attr_key] = input_el;
+        input_el.addEventListener("change", update_weapon_attributes.bind(null, attr));
+        input_container.append(label, input_el);
+        container.append(input_container);
+    }
+    return container;
+}
+
+function update_weapon_stats(stat, event) {
+    const stat_key = weapon_stat_keys[stat];
+    if (event) {
+        let new_val = null;
+        try {
+            new_val = parseInt(event.target.value);
+        } catch (ex) {
+            console.warn(`Invalid input value: ${stat_name}`);
+            return;
+        }
+        UI.weapon_stats[stat_key] = new_val;
+    }
+    switch (stat) {
+    case WEAPON_STAT_ATP_MIN:
+        if (!UI.weapon_stat_elements[weapon_stat_keys[WEAPON_STAT_ATP_MAX]].value) {
+            UI.weapon_stat_elements[weapon_stat_keys[WEAPON_STAT_ATP_MAX]].value = UI.weapon_stat_elements[stat_key].value;
+        }
+        break;
+    }
+    update_enemy_table();
+}
+
+function update_weapon_attributes(attribute, event) {
+    if (event) {
+        let new_val = null;
+        try {
+            new_val = parseInt(event.target.value);
+        } catch (ex) {
+            console.warn(`Invalid input value: ${stat_name}`);
+            return;
+        }
+        UI.weapon_attributes[weapon_attribute_keys[attribute]] = new_val;
+    }
+    update_enemy_table();
+}
+
+async function create_ui() {
     const control_panel = UI.control_panel = document.createElement("div");
-    const character_settings = create_character_settings();
+    const character_settings = await create_character_settings();
+    const weapon_settings = create_weapon_settings();
     const enemy_table = create_enemy_table();
-    control_panel.appendChild(character_settings);
+    control_panel.append(character_settings, weapon_settings);
     UI.root.append(control_panel, enemy_table);
-    update_character_stats("all");
+    update_enemy_table();
 }
 
 function main() {
