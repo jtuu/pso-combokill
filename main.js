@@ -212,15 +212,12 @@ async function create_character_settings() {
         create_labeled_input("Class", character_select).container,
         create_labeled_input("Stat presets", level_select).container,
         create_vertical_rule(),
-        ...editable_character_stats.map(stat => {
-            const stat_key = character_stat_keys[stat];
-            const stat_name = character_stat_names[stat];
-            const labeled = create_labeled_input(stat_name);
-            labeled.input.attrs.value = UI.character_stats[stat_key] = character_data[stat_key];
-            UI.character_stat_elements[stat_key] = labeled.input.toDOM();
-            labeled.input.addEventListener("change", update_character_stats.bind(null, stat));
-            return labeled.container;
-        })
+        ...editable_character_stats.map(stat => create_text_field(
+            stat, character_stat_keys, character_names,
+            UI.character_stats, character_data,
+            UI.character_stat_elements,
+            update_character_stats
+        ))
     ]);
 }
 
@@ -288,25 +285,19 @@ function create_weapon_settings() {
         create_labeled_input("Kind", kind_select).container,
         create_labeled_input("Special", special_select).container,
         create_vertical_rule(),
-        ...editable_weapon_stats.map(stat => {
-            const stat_name = weapon_stat_names[stat];
-            const stat_key = weapon_stat_keys[stat];
-            const labeled = create_labeled_input(stat_name);
-            labeled.input.attrs.value = UI.weapon_stats[stat_key] = weapon[stat_key];
-            UI.weapon_stat_elements[stat_key] = labeled.input.toDOM();
-            labeled.input.addEventListener("change", update_weapon_stats.bind(null, stat));
-            return labeled.container;
-        }),
+        ...editable_weapon_stats.map(stat => create_text_field(
+            stat, weapon_stat_keys, weapon_stat_names,
+            UI.weapon_stats, weapon,
+            UI.weapon_stat_elements,
+            update_weapon_stats
+        )),
         create_vertical_rule(),
-        ...weapon_attributes.map(attr => {
-            const attr_name = weapon_attribute_names[attr];
-            const attr_key = weapon_attribute_keys[attr];
-            const labeled = create_labeled_input(attr_name);
-            labeled.input.attrs.value = UI.weapon_attributes[attr_key];
-            UI.weapon_attribute_elements[attr_key] = labeled.input.toDOM();
-            labeled.input.addEventListener("change", update_weapon_attributes.bind(null, attr));
-            return labeled.container;
-        })
+        ...weapon_attributes.map(attr => create_text_field(
+            attr, weapon_attribute_keys, weapon_attribute_names,
+            UI.weapon_attributes, UI.weapon_attributes,
+            UI.weapon_attribute_elements,
+            update_weapon_attributes
+        ))
     ]);
 }
 

@@ -55,3 +55,13 @@ function remove_children(element) {
     delete_range.setEndAfter(element.lastChild, 0);
     delete_range.deleteContents();
 }
+
+function create_text_field(value_index, keys, names, data_dst, data_src, input_el_dst, change_handler) {
+    const key = keys[value_index];
+    const name = names[value_index];
+    const labeled = create_labeled_input(name);
+    labeled.input.attrs.value = data_dst[key] = data_src[key];
+    input_el_dst[key] = labeled.input.toDOM();
+    labeled.input.addEventListener("change", change_handler.bind(null, value_index));
+    return labeled.container;
+}
