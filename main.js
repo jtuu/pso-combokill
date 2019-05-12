@@ -9,16 +9,14 @@ const UI = {
     selected_difficulty: DIFFICULTY_U,
     selected_game_mode: GAME_MODE_MULTI,
     selected_weapon: weapon_data.findIndex(weapon => weapon.name === "Charge Vulcan"),
-    weapon_stats: {},
-    weapon_stat_elements: {},
-    weapon_attributes: {
+    weapon_stats: {
         native: 0,
         abeast: 0,
         machine: 0,
         dark: 0,
         hit: 0
     },
-    weapon_attribute_elements: {},
+    weapon_stat_elements: {},
     selected_armor: armor_data.findIndex(armor => armor.name === "None"),
     selected_shield: shield_data.findIndex(shield => shield.name === "Red Ring"),
     armor_stats: {},
@@ -173,9 +171,9 @@ function create_weapon_settings() {
         create_vertical_rule(),
         ...weapon_attributes.map(attr => create_text_field(
             attr, weapon_attribute_keys, weapon_attribute_names,
-            UI.weapon_attributes, UI.weapon_attributes,
-            UI.weapon_attribute_elements,
-            update_weapon_attributes
+            UI.weapon_stats, UI.weapon_stats,
+            UI.weapon_stat_elements,
+            update_weapon_stats
         ))
     ]);
 }
