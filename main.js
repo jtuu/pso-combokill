@@ -178,7 +178,7 @@ function create_weapon_settings() {
         create_vertical_rule(),
         ...weapon_attributes.map(attr => create_text_field(
             attr, weapon_attribute_keys, weapon_attribute_names,
-            UI.weapon_stats, UI.weapon_stats,
+            UI.weapon_stats, Object.assign({}, UI.weapon_stats, weapon),
             UI.weapon_stat_elements,
             update_weapon_attributes
         ))

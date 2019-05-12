@@ -4154,4 +4154,5 @@ const weapon_data = [
 const charge_vulcan = Object.assign({}, weapon_data.find(weapon => weapon.name === "Vulcan"));
 charge_vulcan.special = SPECIAL_CHARGE;
 charge_vulcan.name = "Charge Vulcan";
+charge_vulcan.hit = 50;
 weapon_data.push(charge_vulcan);
