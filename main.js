@@ -200,45 +200,49 @@ async function update_enemy_table(select_value_key, event) {
 
 async function create_character_settings() {
     const character_select = create_select(character_classes, character_names, UI.character_stats.class);
-    character_select.addEventListener("change", update_character_stats.bind(null, "class"));
+    character_select.addEventListener("change", update_character_stats.bind(null, CHARACTER_STAT_CLASS));
     const level_indices = Array(NUM_CHARACTER_LEVELS + 1).fill().map((_, i) => i);
     const level_names = level_indices.map((_, i) => `Level ${i + 1}`);
     level_names[CHARACTER_MAX_STATS_IDX] = "Max stats";
     const level_select = create_select(level_indices, level_names, UI.character_stats.level);
-    level_select.addEventListener("change", update_character_stats.bind(null, "level"));
+    level_select.addEventListener("change", update_character_stats.bind(null, CHARACTER_STAT_LEVEL));
     const character_data = (await get_character_data(UI.character_stats.class))[UI.character_stats.level];
     return v("fieldset", [
         v("legend", "Character"),
         create_labeled_input("Class", character_select).container,
         create_labeled_input("Stat presets", level_select).container,
         create_vertical_rule(),
-        ...character_stat_names.map(stat_name => {
+        ...editable_character_stats.map(stat => {
+            const stat_key = character_stat_keys[stat];
+            const stat_name = character_stat_names[stat];
             const labeled = create_labeled_input(stat_name);
-            labeled.input.attrs.value = UI.character_stats[stat_name] = character_data[stat_name];
-            UI.character_stat_elements[stat_name] = labeled.input.toDOM();
-            labeled.input.addEventListener("change", update_character_stats.bind(null, stat_name));
+            labeled.input.attrs.value = UI.character_stats[stat_key] = character_data[stat_key];
+            UI.character_stat_elements[stat_key] = labeled.input.toDOM();
+            labeled.input.addEventListener("change", update_character_stats.bind(null, stat));
             return labeled.container;
         })
     ]);
 }
 
-async function update_character_stats(stat_name, event) {
+async function update_character_stats(stat, event) {
+    const stat_key = character_stat_keys[stat];
     if (event) {
         let new_val = null;
         try {
             new_val = parseInt(event.target.value);
         } catch (ex) {
-            console.warn(`Invalid input value: ${stat_name}`);
+            console.warn(`Invalid input value: ${stat_key}`);
             return;
         }
-        UI.character_stats[stat_name] = new_val;
+        UI.character_stats[stat_key] = new_val;
     }
-    switch (stat_name) {
-    case "class":
-    case "level":
+    switch (stat) {
+    case CHARACTER_STAT_CLASS:    
+    case CHARACTER_STAT_LEVEL:
         const character_data = (await get_character_data(UI.character_stats.class))[UI.character_stats.level];
-        for (const other_stat_name of character_stat_names) {
-            UI.character_stat_elements[other_stat_name].value = UI.character_stats[other_stat_name] = character_data[other_stat_name];
+        for (const other_stat of editable_character_stats) {
+            const other_stat_key = character_stat_keys[other_stat];
+            UI.character_stat_elements[other_stat_key].value = UI.character_stats[other_stat_key] = character_data[other_stat_key];
         }
         break;
     default:
@@ -313,7 +317,7 @@ function update_weapon_stats(stat, event) {
         try {
             new_val = parseInt(event.target.value);
         } catch (ex) {
-            console.warn(`Invalid input value: ${stat_name}`);
+            console.warn(`Invalid input value: ${stat_key}`);
             return;
         }
         UI.weapon_stats[stat_key] = new_val;

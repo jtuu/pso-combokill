@@ -362,10 +362,27 @@ character_names[FONEWEARL]  = "FOnewearl";
 const NUM_CHARACTER_LEVELS = 200;
 const CHARACTER_MAX_STATS_IDX = 200;
 
-const character_stat_names = [
-    "ATP",
-    "ATA"
+const CHARACTER_STAT_ATP   = 0;
+const CHARACTER_STAT_ATA   = 1;
+const CHARACTER_STAT_LEVEL = 2;
+const CHARACTER_STAT_CLASS = 3;
+
+const editable_character_stats = [
+    CHARACTER_STAT_ATP,
+    CHARACTER_STAT_ATA
 ];
+
+const character_stat_keys = [];
+character_stat_keys[CHARACTER_STAT_ATP]   = "ATP";
+character_stat_keys[CHARACTER_STAT_ATA]   = "ATA";
+character_stat_keys[CHARACTER_STAT_LEVEL] = "level";
+character_stat_keys[CHARACTER_STAT_CLASS] = "class";
+
+const character_stat_names = [];
+character_stat_names[CHARACTER_STAT_ATP]   = "ATP";
+character_stat_names[CHARACTER_STAT_ATA]   = "ATA";
+character_stat_names[CHARACTER_STAT_LEVEL] = "Level";
+character_stat_names[CHARACTER_STAT_CLASS] = "Class";
 
 const WEAPON_STAT_ATA     = 0;
 const WEAPON_STAT_ATP_MIN = 1;
