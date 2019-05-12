@@ -223,7 +223,11 @@ const v = (() => {
             return self;
         }
         addEventListener(event, handler) {
-            this.eventHandlers.push([event, handler]);
+            if (this.domElement === null) {
+                this.eventHandlers.push([event, handler]);
+            } else {
+                this.domElement.addEventListener(event, handler);
+            }
         }
     }
     return function v(tagName, attrsOrChildren, children) {
