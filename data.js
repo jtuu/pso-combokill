@@ -414,6 +414,30 @@ weapon_stat_names[WEAPON_STAT_GRIND]   = "Grind";
 weapon_stat_names[WEAPON_STAT_KIND]    = "Kind";
 weapon_stat_names[WEAPON_STAT_SPECIAL] = "Special";
 
+const ARMOR_STAT_ATP = 0;
+const ARMOR_STAT_ATA = 1;
+
+const armor_stats = [
+    ARMOR_STAT_ATP,
+    ARMOR_STAT_ATA
+];
+
+const armor_stat_keys = [];
+armor_stat_keys[ARMOR_STAT_ATP] = "ATP";
+armor_stat_keys[ARMOR_STAT_ATA] = "ATA";
+
+const armor_stat_names = [];
+armor_stat_names[ARMOR_STAT_ATP] = "Armor ATP";
+armor_stat_names[ARMOR_STAT_ATA] = "Armor ATA";
+
+const shield_stats = armor_stats;
+
+const shield_stat_keys = armor_stat_keys;
+
+const shield_stat_names = [];
+shield_stat_names[ARMOR_STAT_ATP] = "Shield ATP";
+shield_stat_names[ARMOR_STAT_ATA] = "Shield ATA";
+
 const OTHER_PARAM_SHIFTA            = 0;
 const OTHER_PARAM_ZALURE            = 1;
 const OTHER_PARAM_ACCURACY_TRESHOLD = 2;

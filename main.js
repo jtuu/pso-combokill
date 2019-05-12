@@ -19,6 +19,12 @@ const UI = {
         hit: 0
     },
     weapon_attribute_elements: {},
+    selected_armor: armor_data.findIndex(armor => armor.name === "None"),
+    selected_shield: shield_data.findIndex(shield => shield.name === "Red Ring"),
+    armor_stats: {},
+    shield_stats: {},
+    armor_stat_elements: {},
+    shield_stat_elements: {},
     other_params: {
         shifta_level: 30,
         zalure_level: 30,
@@ -211,6 +217,81 @@ function update_weapon_attributes(attribute, event) {
     update_enemy_table();
 }
 
+function create_armor_settings() {
+    const armor_indices = armor_data.map((_, i) => i);
+    const armor_names = armor_data.map(armor => armor.name);
+    const armor_select = create_select(armor_indices, armor_names, UI.selected_armor);
+    armor_select.addEventListener("change", event => {
+        UI.selected_armor = event.target.selectedIndex;
+        const armor = armor_data[UI.selected_armor];
+        for (const other_stat of armor_stats) {
+            const stat_key = armor_stat_keys[other_stat];
+            UI.armor_stat_elements[stat_key].value = UI.armor_stats[stat_key] = armor[stat_key];
+        }
+        update_enemy_table();
+    });
+    const shield_indices = shield_data.map((_, i) => i);
+    const shield_names = shield_data.map(shield => shield.name);
+    const shield_select = create_select(shield_indices, shield_names, UI.selected_shield);
+    shield_select.addEventListener("change", event => {
+        UI.selected_shield = event.target.selectedIndex;
+        const shield = shield_data[UI.selected_shield];
+        for (const other_stat of shield_stats) {
+            const stat_key = shield_stat_keys[other_stat];
+            UI.shield_stat_elements[stat_key].value = UI.shield_stats[stat_key] = shield[stat_key];
+        }
+        update_enemy_table();
+    });
+    const armor = armor_data[UI.selected_armor];
+    const shield = shield_data[UI.selected_shield];
+    return v("fieldset", [
+        v("legend", "Armor/Shield"),
+        create_labeled_input("Armor Presets", armor_select).container,
+        create_labeled_input("Shield Presets", shield_select).container,
+        create_vertical_rule(),
+        ...armor_stats.map(stat => create_text_field(
+            stat, armor_stat_keys, armor_stat_names,
+            UI.armor_stats, armor,
+            UI.armor_stat_elements,
+            update_armor_stats
+        )),
+        ...shield_stats.map(stat => create_text_field(
+            stat, shield_stat_keys, shield_stat_names,
+            UI.shield_stats, shield,
+            UI.shield_stat_elements,
+            update_shield_stats
+        ))
+    ]);
+}
+
+function update_armor_stats(stat, event) {
+    const stat_key = armor_stat_keys[stat];
+    if (event) {
+        let new_val = null;
+        try {
+            new_val = parseInt(event.target.value);
+        } catch (ex) {
+            console.warn(`Invalid input value: ${stat_key}`);
+            return;
+        }
+        UI.armor_stats[stat_key] = new_val;
+    }
+}
+
+function update_shield_stats(stat, event) {
+    const stat_key = shield_stat_keys[stat];
+    if (event) {
+        let new_val = null;
+        try {
+            new_val = parseInt(event.target.value);
+        } catch (ex) {
+            console.warn(`Invalid input value: ${stat_key}`);
+            return;
+        }
+        UI.shield_stats[stat_key] = new_val;
+    }
+}
+
 function create_other_settings() {
     return v("fieldset", [
         v("legend", "Other"),
@@ -242,6 +323,7 @@ async function create_ui() {
     v("div", [
         await create_character_settings(),
         create_weapon_settings(),
+        create_armor_settings(),
         create_other_settings()
     ]).appendTo(UI.root);
     create_enemy_table().appendTo(UI.root);
