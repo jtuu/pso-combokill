@@ -413,3 +413,23 @@ weapon_stat_names[WEAPON_STAT_ATP_MAX] = "ATP Max";
 weapon_stat_names[WEAPON_STAT_GRIND]   = "Grind";
 weapon_stat_names[WEAPON_STAT_KIND]    = "Kind";
 weapon_stat_names[WEAPON_STAT_SPECIAL] = "Special";
+
+const OTHER_PARAM_SHIFTA            = 0;
+const OTHER_PARAM_ZALURE            = 1;
+const OTHER_PARAM_ACCURACY_TRESHOLD = 2;
+
+const other_params = [
+    OTHER_PARAM_SHIFTA,
+    OTHER_PARAM_ZALURE,
+    OTHER_PARAM_ACCURACY_TRESHOLD
+];
+
+const other_param_keys = [];
+other_param_keys[OTHER_PARAM_SHIFTA]            = "shifta_level";
+other_param_keys[OTHER_PARAM_ZALURE]            = "zalure_level";
+other_param_keys[OTHER_PARAM_ACCURACY_TRESHOLD] = "accuracy_treshold";
+
+const other_param_names = [];
+other_param_names[OTHER_PARAM_SHIFTA]            = "Shifta Level";
+other_param_names[OTHER_PARAM_ZALURE]            = "Zalure Level";
+other_param_names[OTHER_PARAM_ACCURACY_TRESHOLD] = "Accuracy Treshold %";

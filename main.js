@@ -19,7 +19,12 @@ const UI = {
         hit: 0
     },
     weapon_attribute_elements: {},
-    accuracy_treshold: 100
+    other_params: {
+        shifta_level: 30,
+        zalure_level: 30,
+        accuracy_treshold: 100
+    },
+    other_param_elements: {}
 };
 
 function create_enemy_table() {
@@ -53,7 +58,7 @@ async function update_enemy_table(select_value_key, event) {
     const enemy_data = await get_enemy_data(UI.selected_episode, UI.selected_difficulty, UI.selected_game_mode);
     const temp_table_body = document.createDocumentFragment();
     for (const enemy of enemy_data) {
-        const combo = combo_kill(UI.character_stats, UI.weapon_stats, enemy, UI.accuracy_treshold);
+        const combo = combo_kill(UI.character_stats, UI.weapon_stats, enemy, UI.other_params.accuracy_treshold);
         v("div", {class: "enemy_cell " + (combo === null ? "combo_fail" : "combo_success")}, [
             v("div", [
                 v("div", enemy.name)
@@ -192,15 +197,43 @@ function update_weapon_stats(stat, event) {
 }
 
 function update_weapon_attributes(attribute, event) {
+    const attr_keys = weapon_attribute_keys[attribute];
     if (event) {
         let new_val = null;
         try {
             new_val = parseInt(event.target.value);
         } catch (ex) {
-            console.warn(`Invalid input value: ${stat_name}`);
+            console.warn(`Invalid input value: ${attr_keys}`);
             return;
         }
-        UI.weapon_attributes[weapon_attribute_keys[attribute]] = new_val;
+        UI.weapon_attributes[attr_keys] = new_val;
+    }
+    update_enemy_table();
+}
+
+function create_other_settings() {
+    return v("fieldset", [
+        v("legend", "Other"),
+        ...other_params.map(param => create_text_field(
+            param, other_param_keys, other_param_names,
+            UI.other_params, UI.other_params,
+            UI.other_param_elements,
+            update_other_settings
+        ))
+    ]);
+}
+
+function update_other_settings(param, event) {
+    const param_key = other_param_keys[param];
+    if (event) {
+        let new_val = null;
+        try {
+            new_val = parseInt(event.target.value);
+        } catch (ex) {
+            console.warn(`Invalid input value: ${param_key}`);
+            return;
+        }
+        UI.other_params[other_param_keys[param_key]] = new_val;
     }
     update_enemy_table();
 }
@@ -208,7 +241,8 @@ function update_weapon_attributes(attribute, event) {
 async function create_ui() {
     v("div", [
         await create_character_settings(),
-        create_weapon_settings()
+        create_weapon_settings(),
+        create_other_settings()
     ]).appendTo(UI.root);
     create_enemy_table().appendTo(UI.root);
     update_enemy_table();
