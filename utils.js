@@ -27,17 +27,31 @@ function multichoose(set, r) {
     return result;
 }
 
-function create_labeled_input(label_text, input_el = document.createElement("input")) {
-    const container = document.createElement("div");
-    container.className = "labeled_input_container";
-    const label = document.createElement("label");
-    label.textContent = label_text;
-    container.append(label, input_el);
-    return input_el;
+function create_select(values, names, default_val) {
+    return v("select", values.map(value => v("option", {
+        selected: value === default_val,
+        value: value
+    }, names[value])));
+}
+
+function create_labeled_input(label_text, input = v("input")) {
+    const container = v("div", {class: "labeled_input_container"}, [
+        v("label", label_text),
+        input
+    ]);
+    return {
+        container,
+        input
+    };
 }
 
 function create_vertical_rule() {
-    const vr = document.createElement("div");
-    vr.className = "vertical_rule";
-    return vr;
+    return v("div", {class: "vertical_rule"});
+}
+
+function remove_children(element) {
+    const delete_range = document.createRange();
+    delete_range.setStartBefore(element.firstChild, 0);
+    delete_range.setEndAfter(element.lastChild, 0);
+    delete_range.deleteContents();
 }
