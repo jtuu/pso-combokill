@@ -158,7 +158,7 @@ async function get_enemy_data(episode, difficulty, game_mode) {
     const data_key = `ep${episode_name}_${difficulty_name}_${game_mode_name}`;
     // download if not cached
     if (!enemy_data.hasOwnProperty(data_key)) {
-        const file_path = `/enemy_data/${data_key}.json`;
+        const file_path = `enemy_data/${data_key}.json`;
         const data = await fetch(file_path).then(res => res.json());
         enemy_data[data_key] = data;
     }
@@ -170,7 +170,7 @@ const character_data = {};
 async function get_character_data(character) {
     const character_name = character_names[character];
     if (!character_data.hasOwnProperty(character_name)) {
-        const file_path = `/character_data/${character_name.toLowerCase()}.json`;
+        const file_path = `character_data/${character_name.toLowerCase()}.json`;
         const data = await fetch(file_path).then(res => res.json());
         character_data[character_name] = data;
     }
