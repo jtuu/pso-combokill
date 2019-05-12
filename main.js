@@ -86,7 +86,7 @@ async function create_character_settings() {
         create_labeled_input("Stat presets", level_select).container,
         create_vertical_rule(),
         ...editable_character_stats.map(stat => create_text_field(
-            stat, character_stat_keys, character_names,
+            stat, character_stat_keys, character_stat_names,
             UI.character_stats, character_data,
             UI.character_stat_elements,
             update_character_stats

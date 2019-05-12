@@ -63,8 +63,8 @@ body {
     font-size: 0.8em;
 }
 
-.labeled_input_container > input {
-    width: 5em;
+.labeled_input_container > label, .labeled_input_container > input {
+    width: 6em;
 }
 
 .vertical_rule {
