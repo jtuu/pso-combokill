@@ -18,7 +18,8 @@
         "EIC": 50,
         "ETH": 25,
         "ELT": 5,
-        "EDK": 20
+        "EDK": 20,
+        "attribute": 0
     },
     {
         "name": "Ze Boota",
@@ -39,7 +40,8 @@
         "EIC": 5,
         "ETH": 50,
         "ELT": 5,
-        "EDK": 20
+        "EDK": 20,
+        "attribute": 0
     },
     {
         "name": "Ba Boota",
@@ -60,7 +62,8 @@
         "EIC": 50,
         "ETH": 5,
         "ELT": 5,
-        "EDK": 25
+        "EDK": 25,
+        "attribute": 0
     },
     {
         "name": "Sand Rappy (Crater)",
@@ -81,7 +84,8 @@
         "EIC": 15,
         "ETH": 50,
         "ELT": 5,
-        "EDK": 15
+        "EDK": 15,
+        "attribute": 0
     },
     {
         "name": "Del Rappy (Crater)",
@@ -102,7 +106,8 @@
         "EIC": 75,
         "ETH": 50,
         "ELT": 0,
-        "EDK": 50
+        "EDK": 50,
+        "attribute": 3
     },
     {
         "name": "Zu (Crater)",
@@ -123,7 +128,8 @@
         "EIC": 15,
         "ETH": 60,
         "ELT": 0,
-        "EDK": 30
+        "EDK": 30,
+        "attribute": 0
     },
     {
         "name": "Pazuzu (Crater)",
@@ -144,7 +150,8 @@
         "EIC": 50,
         "ETH": 15,
         "ELT": 50,
-        "EDK": 30
+        "EDK": 30,
+        "attribute": 0
     },
     {
         "name": "Astark",
@@ -165,7 +172,8 @@
         "EIC": 5,
         "ETH": 30,
         "ELT": 0,
-        "EDK": 30
+        "EDK": 30,
+        "attribute": 1
     },
     {
         "name": "Satellite Lizard (Crater)",
@@ -186,7 +194,8 @@
         "EIC": 35,
         "ETH": 35,
         "ELT": 5,
-        "EDK": 5
+        "EDK": 5,
+        "attribute": 0
     },
     {
         "name": "Yowie (Crater)",
@@ -207,7 +216,8 @@
         "EIC": 50,
         "ETH": 50,
         "ELT": 5,
-        "EDK": 10
+        "EDK": 10,
+        "attribute": 0
     },
     {
         "name": "Dorphon",
@@ -228,7 +238,8 @@
         "EIC": 50,
         "ETH": 75,
         "ELT": 0,
-        "EDK": 50
+        "EDK": 50,
+        "attribute": 0
     },
     {
         "name": "Dorphon Eclair",
@@ -249,7 +260,8 @@
         "EIC": 25,
         "ETH": 90,
         "ELT": 50,
-        "EDK": 30
+        "EDK": 30,
+        "attribute": 0
     },
     {
         "name": "Goran",
@@ -270,7 +282,8 @@
         "EIC": 30,
         "ETH": 60,
         "ELT": 5,
-        "EDK": 30
+        "EDK": 30,
+        "attribute": 3
     },
     {
         "name": "Pyro Goran",
@@ -291,7 +304,8 @@
         "EIC": 10,
         "ETH": 60,
         "ELT": 5,
-        "EDK": 30
+        "EDK": 30,
+        "attribute": 3
     },
     {
         "name": "Goran Detonator",
@@ -312,7 +326,8 @@
         "EIC": 50,
         "ETH": 15,
         "ELT": 0,
-        "EDK": 40
+        "EDK": 40,
+        "attribute": 3
     },
     {
         "name": "Sand Rappy (Desert)",
@@ -333,7 +348,8 @@
         "EIC": 30,
         "ETH": 60,
         "ELT": 5,
-        "EDK": 25
+        "EDK": 25,
+        "attribute": 0
     },
     {
         "name": "Del Rappy (Desert)",
@@ -354,7 +370,8 @@
         "EIC": 90,
         "ETH": 60,
         "ELT": 0,
-        "EDK": 60
+        "EDK": 60,
+        "attribute": 3
     },
     {
         "name": "Merissa A",
@@ -375,7 +392,8 @@
         "EIC": 90,
         "ETH": 5,
         "ELT": 10,
-        "EDK": 50
+        "EDK": 50,
+        "attribute": 1
     },
     {
         "name": "Merissa AA",
@@ -396,7 +414,8 @@
         "EIC": 5,
         "ETH": 5,
         "ELT": 10,
-        "EDK": 55
+        "EDK": 55,
+        "attribute": 1
     },
     {
         "name": "Zu (Desert)",
@@ -417,7 +436,8 @@
         "EIC": 20,
         "ETH": 70,
         "ELT": 0,
-        "EDK": 40
+        "EDK": 40,
+        "attribute": 0
     },
     {
         "name": "Pazuzu (Desert)",
@@ -438,7 +458,8 @@
         "EIC": 60,
         "ETH": 20,
         "ELT": 45,
-        "EDK": 40
+        "EDK": 40,
+        "attribute": 0
     },
     {
         "name": "Satellite Lizard (Desert)",
@@ -459,7 +480,8 @@
         "EIC": 40,
         "ETH": 40,
         "ELT": 5,
-        "EDK": 15
+        "EDK": 15,
+        "attribute": 0
     },
     {
         "name": "Yowie (Desert)",
@@ -480,7 +502,8 @@
         "EIC": 45,
         "ETH": 45,
         "ELT": 5,
-        "EDK": 20
+        "EDK": 20,
+        "attribute": 0
     },
     {
         "name": "Girtablulu",
@@ -501,7 +524,8 @@
         "EIC": 60,
         "ETH": 15,
         "ELT": 0,
-        "EDK": 50
+        "EDK": 50,
+        "attribute": 3
     },
     {
         "name": "Saint-Milion (Phase 1)",
@@ -522,7 +546,8 @@
         "EIC": 50,
         "ETH": 5,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Spinner (Saint-Milion 1)",
@@ -543,7 +568,8 @@
         "EIC": 35,
         "ETH": 35,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Saint-Milion (Phase 2)",
@@ -564,7 +590,8 @@
         "EIC": 15,
         "ETH": 75,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Spinner (Saint-Milion 2)",
@@ -585,7 +612,8 @@
         "EIC": 35,
         "ETH": 35,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Shambertin (Phase 1)",
@@ -606,7 +634,8 @@
         "EIC": 5,
         "ETH": 75,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Spinner (Shambertin 1)",
@@ -627,7 +656,8 @@
         "EIC": 35,
         "ETH": 5,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Shambertin (Phase 2)",
@@ -648,7 +678,8 @@
         "EIC": 75,
         "ETH": 15,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Spinner (Shambertin 2)",
@@ -669,7 +700,8 @@
         "EIC": 35,
         "ETH": 5,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Kondrieu (Phase 1)",
@@ -690,7 +722,8 @@
         "EIC": 75,
         "ETH": 50,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Spinner (Kondrieu 1)",
@@ -711,7 +744,8 @@
         "EIC": 5,
         "ETH": 50,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Kondrieu (Phase 2)",
@@ -732,7 +766,8 @@
         "EIC": 15,
         "ETH": 75,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     },
     {
         "name": "Spinner (Kondrieu 2)",
@@ -753,6 +788,7 @@
         "EIC": 5,
         "ETH": 50,
         "ELT": 0,
-        "EDK": 0
+        "EDK": 0,
+        "attribute": 3
     }
 ]
