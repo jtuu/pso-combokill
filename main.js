@@ -26,7 +26,9 @@ const UI = {
     other_params: {
         shifta_level: 30,
         zalure_level: 30,
-        accuracy_treshold: 100
+        accuracy_treshold: 100,
+        frozen: false,
+        paralyzed: false
     },
     other_param_elements: {}
 };
@@ -62,7 +64,12 @@ async function update_enemy_table(select_value_key, event) {
     const enemy_data = await get_enemy_data(UI.selected_episode, UI.selected_difficulty, UI.selected_game_mode);
     const temp_table_body = document.createDocumentFragment();
     for (const enemy of enemy_data) {
-        const combo = combo_kill(UI.character_stats, UI.weapon_stats, enemy, UI.other_params.accuracy_treshold);
+        const combo = combo_kill(
+            UI.character_stats, enemy,
+            UI.weapon_stats, UI.armor_stats, UI.shield_stats,
+            UI.other_params.shifta_level, UI.other_params.zalure_level,
+            UI.other_params.frozen, UI.other_params.paralyzed,
+            UI.other_params.accuracy_treshold);
         v("div", {class: "enemy_cell " + (combo === null ? "combo_fail" : "combo_success")}, [
             v("div", [
                 v("div", enemy.name)
@@ -173,7 +180,7 @@ function create_weapon_settings() {
             attr, weapon_attribute_keys, weapon_attribute_names,
             UI.weapon_stats, UI.weapon_stats,
             UI.weapon_stat_elements,
-            update_weapon_stats
+            update_weapon_attributes
         ))
     ]);
 }
@@ -210,7 +217,7 @@ function update_weapon_attributes(attribute, event) {
             console.warn(`Invalid input value: ${attr_keys}`);
             return;
         }
-        UI.weapon_attributes[attr_keys] = new_val;
+        UI.weapon_stats[attr_keys] = new_val;
     }
     update_enemy_table();
 }
@@ -312,7 +319,7 @@ function update_other_settings(param, event) {
             console.warn(`Invalid input value: ${param_key}`);
             return;
         }
-        UI.other_params[other_param_keys[param_key]] = new_val;
+        UI.other_params[param_key] = new_val;
     }
     update_enemy_table();
 }

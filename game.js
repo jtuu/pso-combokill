@@ -38,22 +38,69 @@ const glitch_combos = (function make_glitch_combos() {
     return combos;
 })();
 
-function combo_kill(attacker, weapon, defender, accuracy_treshold) {
+function modify_attack_kind(orig_kind, special) {
+    if (orig_kind === ATTACK_S) {
+        switch (special) {
+        case SPECIAL_HARD:
+            return ATTACK_H;
+        case SPECIAL_CHARGE:
+        case SPECIAL_SPIRIT:
+        case SPECIAL_BERSERK:
+            return ATTACK_S;
+        default:
+            // pretend non-sacrificals do no damage for now
+            return ATTACK_NONE;
+        }
+    }
+    return orig_kind;
+}
+
+function combo_kill(
+    attacker, defender,
+    weapon, armor, shield,
+    shifta_level, zalure_level,
+    frozen, paralyzed,
+    accuracy_treshold) {
+    const attribute = weapon[weapon_attribute_keys[defender.attribute]];
+    const base_atp = attacker.ATP;
+    const grind_atp = weapon.grind * 2;
+    const equip_atp = (weapon.ATP_min + armor.ATP + shield.ATP + grind_atp) * (attribute + 1);
+    let shifta_atp = 0;
+    if (shifta_level > 0) {
+        const shifta_mod = ((shifta_level - 1) * 1.3 + 10) / 100 + 1;
+        shifta_atp = base_atp * shifta_mod + ((weapon.ATP_max + grind_atp) - (weapon.ATP_min + grind_atp)) * shifta_mod;
+    }
+    const total_atp = base_atp + equip_atp + shifta_atp;
+    let effective_dfp = defender.DFP;
+    if (zalure_level > 0) {
+        const zalure_mod = Math.max(0, 1 - ((zalure_level - 1) * 1.3 + 10) / 100);
+        effective_dfp *= zalure_mod;
+    }
+    const total_ata = attacker.ATA + weapon.ATA + armor.ATA + shield.ATA + weapon.hit;
+    let evp_mod = 1;
+    if (frozen) {
+        evp_mod -= 0.30;
+    }
+    if (paralyzed) {
+        evp_mod -= 0.15;
+    }
+    const effective_evp = defender.EVP * evp_mod;
     combos:
     for (const combo of normal_combos) {
         let combo_dmg = 0;
         // check combo accuracy
         for (let step = 0; step < combo.length; step++) {
-            const attack_kind = combo[step];
-            const accuracy = attack_accuracy(attack_kind, step, attacker.ATA, defender.EVP);
+            const attack_kind = modify_attack_kind(combo[step], weapon.special);
+            const accuracy = attack_accuracy(attack_kind, step, total_ata, effective_evp);
             if (accuracy < accuracy_treshold) {
                 continue combos;
             }
         }
         // sum combo damage
         for (let step = 0; step < combo.length; step++) {
-            const attack_kind = combo[step];
-            combo_dmg += attack_damage(attack_kind, attacker.ATP, defender.DFP) * weapon_hit_counts[weapon.kind][step];
+            const attack_kind = modify_attack_kind(combo[step], weapon.special);
+            const hit_dmg = attack_damage(attack_kind, total_atp, effective_dfp);
+            combo_dmg += hit_dmg * weapon_hit_counts[weapon.kind][step];
         }
         // did it die?
         if (combo_dmg >= defender.HP) {

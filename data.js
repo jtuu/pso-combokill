@@ -4,6 +4,7 @@ const ATTACK_S = 2;
 const ATTACK_N_GLITCH = 3;
 const ATTACK_H_GLITCH = 4;
 const ATTACK_S_GLITCH = 5;
+const ATTACK_NONE     = 6;
 
 const NUM_ATTACK_KINDS = 3;
 const NUM_COMBO_STEPS = 3;
@@ -15,10 +16,21 @@ atk_kind_names[ATTACK_S]        = "S";
 atk_kind_names[ATTACK_N_GLITCH] = "N=";
 atk_kind_names[ATTACK_H_GLITCH] = "H=";
 atk_kind_names[ATTACK_S_GLITCH] = "S=";
+atk_kind_names[ATTACK_NONE]     = "x";
 
-const atk_kind_ata_coeffs   = [1.00, 0.70, 0.50];
+const atk_kind_ata_coeffs = [];
+atk_kind_ata_coeffs[ATTACK_N]    = 1.0;
+atk_kind_ata_coeffs[ATTACK_H]    = 0.7;
+atk_kind_ata_coeffs[ATTACK_S]    = 0.5;
+atk_kind_ata_coeffs[ATTACK_NONE] = 0.0;
+
 const combo_step_ata_coeffs = [1.00, 1.30, 1.69];
-const atk_kind_dmg_coeffs   = [1.00, 1.89, 3.32];
+
+const atk_kind_dmg_coeffs = [];
+atk_kind_dmg_coeffs[ATTACK_N]    = 1.00;
+atk_kind_dmg_coeffs[ATTACK_H]    = 1.89;
+atk_kind_dmg_coeffs[ATTACK_S]    = 3.34;
+atk_kind_dmg_coeffs[ATTACK_NONE] = 0.00;
 
 const VJAYA_SPECIAL_DMG_COEFF = 5.56;
 const CRIT_DMG_COEFF = 1.5;
