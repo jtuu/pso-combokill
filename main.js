@@ -168,7 +168,7 @@ function create_weapon_settings() {
     combo_locked.container.attrs.classList.add("slim");
     UI.weapon_stats.combo_locked = weapon.combo_locked;
     combo_locked.input.addEventListener("change", event => {
-        UI.weapon_stats.combo_locked = event.target.selected;
+        UI.weapon_stats.combo_locked = event.target.checked;
         update_enemy_table();
     });
     UI.weapon_combo_locked_checkbox = combo_locked.input.toDOM();
