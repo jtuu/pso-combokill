@@ -7,7 +7,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 40,
-        "ATP_max": 55
+        "ATP_max": 55,
+        "combo_locked": false
     },
     {
         "name": "Brand",
@@ -17,7 +18,8 @@ const weapon_data = [
         "grind": 32,
         "special": 0,
         "ATP_min": 80,
-        "ATP_max": 100
+        "ATP_max": 100,
+        "combo_locked": false
     },
     {
         "name": "Buster",
@@ -27,7 +29,8 @@ const weapon_data = [
         "grind": 30,
         "special": 0,
         "ATP_min": 120,
-        "ATP_max": 160
+        "ATP_max": 160,
+        "combo_locked": false
     },
     {
         "name": "Pallasch",
@@ -37,7 +40,8 @@ const weapon_data = [
         "grind": 26,
         "special": 0,
         "ATP_min": 170,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Gladius",
@@ -47,7 +51,8 @@ const weapon_data = [
         "grind": 18,
         "special": 0,
         "ATP_min": 240,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber",
@@ -57,7 +62,8 @@ const weapon_data = [
         "grind": 44,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Kaladbolg",
@@ -67,7 +73,8 @@ const weapon_data = [
         "grind": 25,
         "special": 17,
         "ATP_min": 260,
-        "ATP_max": 320
+        "ATP_max": 320,
+        "combo_locked": false
     },
     {
         "name": "Durandal",
@@ -77,7 +84,8 @@ const weapon_data = [
         "grind": 37,
         "special": 10,
         "ATP_min": 300,
-        "ATP_max": 376
+        "ATP_max": 376,
+        "combo_locked": false
     },
     {
         "name": "Galatine",
@@ -87,7 +95,8 @@ const weapon_data = [
         "grind": 9,
         "special": 13,
         "ATP_min": 990,
-        "ATP_max": 1260
+        "ATP_max": 1260,
+        "combo_locked": false
     },
     {
         "name": "Sword",
@@ -97,7 +106,8 @@ const weapon_data = [
         "grind": 46,
         "special": 0,
         "ATP_min": 25,
-        "ATP_max": 60
+        "ATP_max": 60,
+        "combo_locked": false
     },
     {
         "name": "Gigush",
@@ -107,7 +117,8 @@ const weapon_data = [
         "grind": 32,
         "special": 0,
         "ATP_min": 55,
-        "ATP_max": 100
+        "ATP_max": 100,
+        "combo_locked": false
     },
     {
         "name": "Breaker",
@@ -117,7 +128,8 @@ const weapon_data = [
         "grind": 18,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "Claymore",
@@ -127,7 +139,8 @@ const weapon_data = [
         "grind": 16,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Calibur",
@@ -137,7 +150,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 210,
-        "ATP_max": 255
+        "ATP_max": 255,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword",
@@ -147,7 +161,8 @@ const weapon_data = [
         "grind": 21,
         "special": 0,
         "ATP_min": 230,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Last Survivor",
@@ -157,7 +172,8 @@ const weapon_data = [
         "grind": 31,
         "special": 3,
         "ATP_min": 275,
-        "ATP_max": 321
+        "ATP_max": 321,
+        "combo_locked": false
     },
     {
         "name": "Dragon Slayer",
@@ -167,7 +183,8 @@ const weapon_data = [
         "grind": 34,
         "special": 26,
         "ATP_min": 345,
-        "ATP_max": 352
+        "ATP_max": 352,
+        "combo_locked": false
     },
     {
         "name": "Dagger",
@@ -177,7 +194,8 @@ const weapon_data = [
         "grind": 65,
         "special": 0,
         "ATP_min": 25,
-        "ATP_max": 40
+        "ATP_max": 40,
+        "combo_locked": false
     },
     {
         "name": "Knife",
@@ -187,7 +205,8 @@ const weapon_data = [
         "grind": 50,
         "special": 0,
         "ATP_min": 50,
-        "ATP_max": 70
+        "ATP_max": 70,
+        "combo_locked": false
     },
     {
         "name": "Blade",
@@ -197,7 +216,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 80,
-        "ATP_max": 100
+        "ATP_max": 100,
+        "combo_locked": false
     },
     {
         "name": "Edge",
@@ -207,7 +227,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 105,
-        "ATP_max": 130
+        "ATP_max": 130,
+        "combo_locked": false
     },
     {
         "name": "Ripper",
@@ -217,7 +238,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 125,
-        "ATP_max": 160
+        "ATP_max": 160,
+        "combo_locked": false
     },
     {
         "name": "Blade Dance",
@@ -227,7 +249,8 @@ const weapon_data = [
         "grind": 30,
         "special": 21,
         "ATP_min": 110,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Bloody Art",
@@ -237,7 +260,8 @@ const weapon_data = [
         "grind": 42,
         "special": 39,
         "ATP_min": 120,
-        "ATP_max": 175
+        "ATP_max": 175,
+        "combo_locked": false
     },
     {
         "name": "Cross Scar",
@@ -247,7 +271,8 @@ const weapon_data = [
         "grind": 28,
         "special": 29,
         "ATP_min": 135,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Two Kamui",
@@ -257,7 +282,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 600,
-        "ATP_max": 650
+        "ATP_max": 650,
+        "combo_locked": false
     },
     {
         "name": "Zero Divide",
@@ -267,7 +293,8 @@ const weapon_data = [
         "grind": 99,
         "special": 18,
         "ATP_min": 200,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Partisan",
@@ -277,7 +304,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 30,
-        "ATP_max": 40
+        "ATP_max": 40,
+        "combo_locked": false
     },
     {
         "name": "Halbert",
@@ -287,7 +315,8 @@ const weapon_data = [
         "grind": 30,
         "special": 0,
         "ATP_min": 65,
-        "ATP_max": 75
+        "ATP_max": 75,
+        "combo_locked": false
     },
     {
         "name": "Glaive",
@@ -297,7 +326,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 95,
-        "ATP_max": 110
+        "ATP_max": 110,
+        "combo_locked": false
     },
     {
         "name": "Berdys",
@@ -307,7 +337,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 130,
-        "ATP_max": 145
+        "ATP_max": 145,
+        "combo_locked": false
     },
     {
         "name": "Gungnir",
@@ -317,7 +348,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Brionac",
@@ -327,7 +359,8 @@ const weapon_data = [
         "grind": 15,
         "special": 7,
         "ATP_min": 150,
-        "ATP_max": 182
+        "ATP_max": 182,
+        "combo_locked": false
     },
     {
         "name": "Vjaya",
@@ -337,7 +370,8 @@ const weapon_data = [
         "grind": 15,
         "special": 12,
         "ATP_min": 160,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Gae Bolg",
@@ -347,7 +381,8 @@ const weapon_data = [
         "grind": 30,
         "special": 17,
         "ATP_min": 215,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Asteron Belt",
@@ -357,7 +392,8 @@ const weapon_data = [
         "grind": 9,
         "special": 34,
         "ATP_min": 380,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Slicer",
@@ -367,7 +403,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 15
+        "ATP_max": 15,
+        "combo_locked": false
     },
     {
         "name": "Spinner",
@@ -377,7 +414,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "Cutter",
@@ -387,7 +425,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 35,
-        "ATP_max": 55
+        "ATP_max": 55,
+        "combo_locked": false
     },
     {
         "name": "Sawcer",
@@ -397,7 +436,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 60,
-        "ATP_max": 80
+        "ATP_max": 80,
+        "combo_locked": false
     },
     {
         "name": "Diska",
@@ -407,7 +447,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 85,
-        "ATP_max": 105
+        "ATP_max": 105,
+        "combo_locked": false
     },
     {
         "name": "Slicer of Assassin",
@@ -417,7 +458,8 @@ const weapon_data = [
         "grind": 12,
         "special": 33,
         "ATP_min": 120,
-        "ATP_max": 125
+        "ATP_max": 125,
+        "combo_locked": false
     },
     {
         "name": "Diska of Liberator",
@@ -427,7 +469,8 @@ const weapon_data = [
         "grind": 9,
         "special": 37,
         "ATP_min": 120,
-        "ATP_max": 146
+        "ATP_max": 146,
+        "combo_locked": false
     },
     {
         "name": "Diska of Braveman",
@@ -437,7 +480,8 @@ const weapon_data = [
         "grind": 9,
         "special": 14,
         "ATP_min": 150,
-        "ATP_max": 167
+        "ATP_max": 167,
+        "combo_locked": false
     },
     {
         "name": "Izmaela",
@@ -447,7 +491,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 250,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Handgun",
@@ -457,7 +502,8 @@ const weapon_data = [
         "grind": 75,
         "special": 0,
         "ATP_min": 20,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "Autogun",
@@ -467,7 +513,8 @@ const weapon_data = [
         "grind": 50,
         "special": 0,
         "ATP_min": 45,
-        "ATP_max": 65
+        "ATP_max": 65,
+        "combo_locked": false
     },
     {
         "name": "Lockgun",
@@ -477,7 +524,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 80,
-        "ATP_max": 100
+        "ATP_max": 100,
+        "combo_locked": false
     },
     {
         "name": "Railgun",
@@ -487,7 +535,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 120,
-        "ATP_max": 140
+        "ATP_max": 140,
+        "combo_locked": false
     },
     {
         "name": "Raygun",
@@ -497,7 +546,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Varista",
@@ -507,7 +557,8 @@ const weapon_data = [
         "grind": 25,
         "special": 21,
         "ATP_min": 155,
-        "ATP_max": 210
+        "ATP_max": 210,
+        "combo_locked": false
     },
     {
         "name": "Bravace",
@@ -517,7 +568,8 @@ const weapon_data = [
         "grind": 30,
         "special": 29,
         "ATP_min": 190,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Custom Ray ver.OO",
@@ -527,7 +579,8 @@ const weapon_data = [
         "grind": 20,
         "special": 25,
         "ATP_min": 165,
-        "ATP_max": 195
+        "ATP_max": 195,
+        "combo_locked": false
     },
     {
         "name": "Tension Blaster",
@@ -537,7 +590,8 @@ const weapon_data = [
         "grind": 0,
         "special": 21,
         "ATP_min": 280,
-        "ATP_max": 310
+        "ATP_max": 310,
+        "combo_locked": false
     },
     {
         "name": "Rifle",
@@ -547,7 +601,8 @@ const weapon_data = [
         "grind": 65,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 50
+        "ATP_max": 50,
+        "combo_locked": false
     },
     {
         "name": "Sniper",
@@ -557,7 +612,8 @@ const weapon_data = [
         "grind": 55,
         "special": 0,
         "ATP_min": 50,
-        "ATP_max": 90
+        "ATP_max": 90,
+        "combo_locked": false
     },
     {
         "name": "Blaster",
@@ -567,7 +623,8 @@ const weapon_data = [
         "grind": 45,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 130
+        "ATP_max": 130,
+        "combo_locked": false
     },
     {
         "name": "Beam",
@@ -577,7 +634,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 140,
-        "ATP_max": 170
+        "ATP_max": 170,
+        "combo_locked": false
     },
     {
         "name": "Laser",
@@ -587,7 +645,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 210
+        "ATP_max": 210,
+        "combo_locked": false
     },
     {
         "name": "Visk-235W",
@@ -597,7 +656,8 @@ const weapon_data = [
         "grind": 15,
         "special": 21,
         "ATP_min": 220,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Wals-MK2",
@@ -607,7 +667,8 @@ const weapon_data = [
         "grind": 9,
         "special": 37,
         "ATP_min": 260,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Justy-23ST",
@@ -617,7 +678,8 @@ const weapon_data = [
         "grind": 15,
         "special": 39,
         "ATP_min": 290,
-        "ATP_max": 320
+        "ATP_max": 320,
+        "combo_locked": false
     },
     {
         "name": "Rianov 303SNR",
@@ -627,7 +689,8 @@ const weapon_data = [
         "grind": 60,
         "special": 0,
         "ATP_min": 300,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Rianov 303SNR-1",
@@ -637,7 +700,8 @@ const weapon_data = [
         "grind": 50,
         "special": 0,
         "ATP_min": 350,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Rianov 303SNR-2",
@@ -647,7 +711,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Rianov 303SNR-3",
@@ -657,7 +722,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 500,
-        "ATP_max": 500
+        "ATP_max": 500,
+        "combo_locked": false
     },
     {
         "name": "Rianov 303SNR-4",
@@ -667,7 +733,8 @@ const weapon_data = [
         "grind": 60,
         "special": 0,
         "ATP_min": 350,
-        "ATP_max": 450
+        "ATP_max": 450,
+        "combo_locked": false
     },
     {
         "name": "Rianov 303SNR-5",
@@ -677,7 +744,8 @@ const weapon_data = [
         "grind": 0,
         "special": 33,
         "ATP_min": 550,
-        "ATP_max": 550
+        "ATP_max": 550,
+        "combo_locked": true
     },
     {
         "name": "Mechgun",
@@ -687,7 +755,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 2,
-        "ATP_max": 4
+        "ATP_max": 4,
+        "combo_locked": false
     },
     {
         "name": "Assault",
@@ -697,7 +766,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 8
+        "ATP_max": 8,
+        "combo_locked": false
     },
     {
         "name": "Repeater",
@@ -707,7 +777,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 12
+        "ATP_max": 12,
+        "combo_locked": false
     },
     {
         "name": "Gatling",
@@ -717,7 +788,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 16
+        "ATP_max": 16,
+        "combo_locked": false
     },
     {
         "name": "Vulcan",
@@ -727,7 +799,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 20
+        "ATP_max": 20,
+        "combo_locked": false
     },
     {
         "name": "M&A60 Vise",
@@ -737,7 +810,8 @@ const weapon_data = [
         "grind": 9,
         "special": 14,
         "ATP_min": 15,
-        "ATP_max": 25
+        "ATP_max": 25,
+        "combo_locked": false
     },
     {
         "name": "H&S25 Justice",
@@ -747,7 +821,8 @@ const weapon_data = [
         "grind": 9,
         "special": 17,
         "ATP_min": 15,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "L&K14 Combat",
@@ -757,7 +832,8 @@ const weapon_data = [
         "grind": 20,
         "special": 21,
         "ATP_min": 15,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "Shot",
@@ -767,7 +843,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 20,
-        "ATP_max": 25
+        "ATP_max": 25,
+        "combo_locked": false
     },
     {
         "name": "Spread",
@@ -777,7 +854,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 30,
-        "ATP_max": 50
+        "ATP_max": 50,
+        "combo_locked": false
     },
     {
         "name": "Cannon",
@@ -787,7 +865,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 40,
-        "ATP_max": 80
+        "ATP_max": 80,
+        "combo_locked": false
     },
     {
         "name": "Launcher",
@@ -797,7 +876,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 50,
-        "ATP_max": 110
+        "ATP_max": 110,
+        "combo_locked": false
     },
     {
         "name": "Arms",
@@ -807,7 +887,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 60,
-        "ATP_max": 140
+        "ATP_max": 140,
+        "combo_locked": false
     },
     {
         "name": "Crush Bullet",
@@ -817,7 +898,8 @@ const weapon_data = [
         "grind": 25,
         "special": 3,
         "ATP_min": 85,
-        "ATP_max": 133
+        "ATP_max": 133,
+        "combo_locked": false
     },
     {
         "name": "Meteor Smash",
@@ -827,7 +909,8 @@ const weapon_data = [
         "grind": 25,
         "special": 7,
         "ATP_min": 80,
-        "ATP_max": 160
+        "ATP_max": 160,
+        "combo_locked": false
     },
     {
         "name": "Final Impact",
@@ -837,7 +920,8 @@ const weapon_data = [
         "grind": 30,
         "special": 10,
         "ATP_min": 95,
-        "ATP_max": 170
+        "ATP_max": 170,
+        "combo_locked": false
     },
     {
         "name": "Cane",
@@ -847,7 +931,8 @@ const weapon_data = [
         "grind": 55,
         "special": 0,
         "ATP_min": 25,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "Stick",
@@ -857,7 +942,8 @@ const weapon_data = [
         "grind": 40,
         "special": 0,
         "ATP_min": 50,
-        "ATP_max": 60
+        "ATP_max": 60,
+        "combo_locked": false
     },
     {
         "name": "Mace",
@@ -867,7 +953,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 90,
-        "ATP_max": 90
+        "ATP_max": 90,
+        "combo_locked": false
     },
     {
         "name": "Club",
@@ -877,7 +964,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 110,
-        "ATP_max": 120
+        "ATP_max": 120,
+        "combo_locked": false
     },
     {
         "name": "Club of Laconium",
@@ -887,7 +975,8 @@ const weapon_data = [
         "grind": 9,
         "special": 25,
         "ATP_min": 140,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "Mace of Adaman",
@@ -897,7 +986,8 @@ const weapon_data = [
         "grind": 9,
         "special": 17,
         "ATP_min": 170,
-        "ATP_max": 170
+        "ATP_max": 170,
+        "combo_locked": false
     },
     {
         "name": "Club of Zumiuran",
@@ -907,7 +997,8 @@ const weapon_data = [
         "grind": 9,
         "special": 29,
         "ATP_min": 178,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Lollipop",
@@ -917,7 +1008,8 @@ const weapon_data = [
         "grind": 12,
         "special": 5,
         "ATP_min": 150,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Rod",
@@ -927,7 +1019,8 @@ const weapon_data = [
         "grind": 75,
         "special": 0,
         "ATP_min": 25,
-        "ATP_max": 45
+        "ATP_max": 45,
+        "combo_locked": false
     },
     {
         "name": "Pole",
@@ -937,7 +1030,8 @@ const weapon_data = [
         "grind": 50,
         "special": 0,
         "ATP_min": 55,
-        "ATP_max": 80
+        "ATP_max": 80,
+        "combo_locked": false
     },
     {
         "name": "Pillar",
@@ -947,7 +1041,8 @@ const weapon_data = [
         "grind": 30,
         "special": 0,
         "ATP_min": 85,
-        "ATP_max": 115
+        "ATP_max": 115,
+        "combo_locked": false
     },
     {
         "name": "Striker",
@@ -957,7 +1052,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "Battle Verge",
@@ -967,7 +1063,8 @@ const weapon_data = [
         "grind": 15,
         "special": 39,
         "ATP_min": 130,
-        "ATP_max": 185
+        "ATP_max": 185,
+        "combo_locked": false
     },
     {
         "name": "Brave Hammer",
@@ -977,7 +1074,8 @@ const weapon_data = [
         "grind": 15,
         "special": 13,
         "ATP_min": 170,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Alive Aqhu",
@@ -987,7 +1085,8 @@ const weapon_data = [
         "grind": 15,
         "special": 3,
         "ATP_min": 210,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Valkyrie",
@@ -997,7 +1096,8 @@ const weapon_data = [
         "grind": 33,
         "special": 0,
         "ATP_min": 600,
-        "ATP_max": 600
+        "ATP_max": 600,
+        "combo_locked": false
     },
     {
         "name": "Wand",
@@ -1007,7 +1107,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 3,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "Staff",
@@ -1017,7 +1118,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "Baton",
@@ -1027,7 +1129,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 35,
-        "ATP_max": 50
+        "ATP_max": 50,
+        "combo_locked": false
     },
     {
         "name": "Scepter",
@@ -1037,7 +1140,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 55,
-        "ATP_max": 75
+        "ATP_max": 75,
+        "combo_locked": false
     },
     {
         "name": "Fire Scepter: Agni",
@@ -1047,7 +1151,8 @@ const weapon_data = [
         "grind": 9,
         "special": 25,
         "ATP_min": 70,
-        "ATP_max": 95
+        "ATP_max": 95,
+        "combo_locked": false
     },
     {
         "name": "Ice Staff: Dagon",
@@ -1057,7 +1162,8 @@ const weapon_data = [
         "grind": 9,
         "special": 17,
         "ATP_min": 73,
-        "ATP_max": 105
+        "ATP_max": 105,
+        "combo_locked": false
     },
     {
         "name": "Storm Wand: Indra",
@@ -1067,7 +1173,8 @@ const weapon_data = [
         "grind": 9,
         "special": 29,
         "ATP_min": 105,
-        "ATP_max": 120
+        "ATP_max": 120,
+        "combo_locked": false
     },
     {
         "name": "Earth Wand: Brownie",
@@ -1077,7 +1184,8 @@ const weapon_data = [
         "grind": 20,
         "special": 4,
         "ATP_min": 370,
-        "ATP_max": 670
+        "ATP_max": 670,
+        "combo_locked": false
     },
     {
         "name": "Photon Claw",
@@ -1087,7 +1195,8 @@ const weapon_data = [
         "grind": 20,
         "special": 2,
         "ATP_min": 230,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Silence Claw",
@@ -1097,7 +1206,8 @@ const weapon_data = [
         "grind": 15,
         "special": 33,
         "ATP_min": 335,
-        "ATP_max": 345
+        "ATP_max": 345,
+        "combo_locked": false
     },
     {
         "name": "Nei's Claw (Replica)",
@@ -1107,7 +1217,8 @@ const weapon_data = [
         "grind": 25,
         "special": 4,
         "ATP_min": 400,
-        "ATP_max": 412
+        "ATP_max": 412,
+        "combo_locked": false
     },
     {
         "name": "Phoenix Claw",
@@ -1117,7 +1228,8 @@ const weapon_data = [
         "grind": 15,
         "special": 26,
         "ATP_min": 540,
-        "ATP_max": 570
+        "ATP_max": 570,
+        "combo_locked": false
     },
     {
         "name": "Double Saber",
@@ -1127,7 +1239,8 @@ const weapon_data = [
         "grind": 35,
         "special": 6,
         "ATP_min": 150,
-        "ATP_max": 152
+        "ATP_max": 152,
+        "combo_locked": false
     },
     {
         "name": "Stag Cutlery",
@@ -1137,7 +1250,8 @@ const weapon_data = [
         "grind": 30,
         "special": 37,
         "ATP_min": 230,
-        "ATP_max": 235
+        "ATP_max": 235,
+        "combo_locked": false
     },
     {
         "name": "Twin Brand",
@@ -1147,7 +1261,8 @@ const weapon_data = [
         "grind": 60,
         "special": 39,
         "ATP_min": 235,
-        "ATP_max": 240
+        "ATP_max": 240,
+        "combo_locked": false
     },
     {
         "name": "Brave Knuckle",
@@ -1157,7 +1272,8 @@ const weapon_data = [
         "grind": 30,
         "special": 20,
         "ATP_min": 380,
-        "ATP_max": 460
+        "ATP_max": 460,
+        "combo_locked": false
     },
     {
         "name": "Angry Fist",
@@ -1167,7 +1283,8 @@ const weapon_data = [
         "grind": 50,
         "special": 17,
         "ATP_min": 460,
-        "ATP_max": 560
+        "ATP_max": 560,
+        "combo_locked": false
     },
     {
         "name": "God Hand",
@@ -1177,7 +1294,8 @@ const weapon_data = [
         "grind": 30,
         "special": 11,
         "ATP_min": 585,
-        "ATP_max": 705
+        "ATP_max": 705,
+        "combo_locked": false
     },
     {
         "name": "Sonic Knuckle",
@@ -1187,7 +1305,8 @@ const weapon_data = [
         "grind": 0,
         "special": 11,
         "ATP_min": 260,
-        "ATP_max": 310
+        "ATP_max": 310,
+        "combo_locked": false
     },
     {
         "name": "Orotiagito",
@@ -1197,7 +1316,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 750,
-        "ATP_max": 800
+        "ATP_max": 800,
+        "combo_locked": false
     },
     {
         "name": "Agito (1975)",
@@ -1207,7 +1327,8 @@ const weapon_data = [
         "grind": 0,
         "special": 31,
         "ATP_min": 460,
-        "ATP_max": 480
+        "ATP_max": 480,
+        "combo_locked": false
     },
     {
         "name": "Agito (1983)",
@@ -1217,7 +1338,8 @@ const weapon_data = [
         "grind": 45,
         "special": 31,
         "ATP_min": 200,
-        "ATP_max": 500
+        "ATP_max": 500,
+        "combo_locked": false
     },
     {
         "name": "Agito (2001)",
@@ -1227,7 +1349,8 @@ const weapon_data = [
         "grind": 9,
         "special": 31,
         "ATP_min": 400,
-        "ATP_max": 430
+        "ATP_max": 430,
+        "combo_locked": false
     },
     {
         "name": "Agito (1991)",
@@ -1237,7 +1360,8 @@ const weapon_data = [
         "grind": 9,
         "special": 31,
         "ATP_min": 400,
-        "ATP_max": 410
+        "ATP_max": 410,
+        "combo_locked": false
     },
     {
         "name": "Agito (1977)",
@@ -1247,7 +1371,8 @@ const weapon_data = [
         "grind": 50,
         "special": 31,
         "ATP_min": 450,
-        "ATP_max": 460
+        "ATP_max": 460,
+        "combo_locked": false
     },
     {
         "name": "Agito (1980)",
@@ -1257,7 +1382,8 @@ const weapon_data = [
         "grind": 40,
         "special": 31,
         "ATP_min": 455,
-        "ATP_max": 460
+        "ATP_max": 460,
+        "combo_locked": false
     },
     {
         "name": "Raikiri",
@@ -1267,7 +1393,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 550,
-        "ATP_max": 560
+        "ATP_max": 560,
+        "combo_locked": false
     },
     {
         "name": "Soul Eater",
@@ -1277,7 +1404,8 @@ const weapon_data = [
         "grind": 9,
         "special": 14,
         "ATP_min": 180,
-        "ATP_max": 185
+        "ATP_max": 185,
+        "combo_locked": false
     },
     {
         "name": "Soul Banish",
@@ -1287,7 +1415,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 350,
-        "ATP_max": 370
+        "ATP_max": 370,
+        "combo_locked": false
     },
     {
         "name": "Spread Needle",
@@ -1297,7 +1426,8 @@ const weapon_data = [
         "grind": 40,
         "special": 21,
         "ATP_min": 1,
-        "ATP_max": 110
+        "ATP_max": 110,
+        "combo_locked": false
     },
     {
         "name": "Holy Ray",
@@ -1307,7 +1437,8 @@ const weapon_data = [
         "grind": 40,
         "special": 22,
         "ATP_min": 290,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Inferno Bazooka",
@@ -1317,7 +1448,8 @@ const weapon_data = [
         "grind": 9,
         "special": 39,
         "ATP_min": 230,
-        "ATP_max": 410
+        "ATP_max": 410,
+        "combo_locked": false
     },
     {
         "name": "Rambling May",
@@ -1327,7 +1459,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 360,
-        "ATP_max": 450
+        "ATP_max": 450,
+        "combo_locked": false
     },
     {
         "name": "L&K38 Combat",
@@ -1337,7 +1470,8 @@ const weapon_data = [
         "grind": 25,
         "special": 26,
         "ATP_min": 150,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": true
     },
     {
         "name": "Flame Visit",
@@ -1347,7 +1481,8 @@ const weapon_data = [
         "grind": 9,
         "special": 37,
         "ATP_min": 300,
-        "ATP_max": 450
+        "ATP_max": 450,
+        "combo_locked": false
     },
     {
         "name": "Burning Visit",
@@ -1357,7 +1492,8 @@ const weapon_data = [
         "grind": 18,
         "special": 37,
         "ATP_min": 340,
-        "ATP_max": 540
+        "ATP_max": 540,
+        "combo_locked": true
     },
     {
         "name": "Akiko's Frying Pan",
@@ -1367,7 +1503,8 @@ const weapon_data = [
         "grind": 0,
         "special": 6,
         "ATP_min": 230,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Sorcerer's Cane",
@@ -1377,7 +1514,8 @@ const weapon_data = [
         "grind": 0,
         "special": 8,
         "ATP_min": 360,
-        "ATP_max": 360
+        "ATP_max": 360,
+        "combo_locked": false
     },
     {
         "name": "S-Beat's Blade",
@@ -1387,7 +1525,8 @@ const weapon_data = [
         "grind": 15,
         "special": 34,
         "ATP_min": 210,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "P-Arms' Blade",
@@ -1397,7 +1536,8 @@ const weapon_data = [
         "grind": 25,
         "special": 22,
         "ATP_min": 250,
-        "ATP_max": 270
+        "ATP_max": 270,
+        "combo_locked": false
     },
     {
         "name": "Delsaber's Buster",
@@ -1407,7 +1547,8 @@ const weapon_data = [
         "grind": 9,
         "special": 29,
         "ATP_min": 340,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": false
     },
     {
         "name": "Elysion",
@@ -1417,7 +1558,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 360,
-        "ATP_max": 368
+        "ATP_max": 368,
+        "combo_locked": false
     },
     {
         "name": "Bringer's Rifle",
@@ -1427,7 +1569,8 @@ const weapon_data = [
         "grind": 9,
         "special": 40,
         "ATP_min": 330,
-        "ATP_max": 370
+        "ATP_max": 370,
+        "combo_locked": false
     },
     {
         "name": "Egg Blaster",
@@ -1437,7 +1580,8 @@ const weapon_data = [
         "grind": 0,
         "special": 25,
         "ATP_min": 300,
-        "ATP_max": 330
+        "ATP_max": 330,
+        "combo_locked": false
     },
     {
         "name": "Psycho Wand",
@@ -1447,7 +1591,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 395,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Heaven Punisher",
@@ -1457,7 +1602,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 300,
-        "ATP_max": 330
+        "ATP_max": 330,
+        "combo_locked": false
     },
     {
         "name": "Lavis Cannon",
@@ -1467,7 +1613,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 730,
-        "ATP_max": 750
+        "ATP_max": 750,
+        "combo_locked": false
     },
     {
         "name": "Victor Axe",
@@ -1477,7 +1624,8 @@ const weapon_data = [
         "grind": 20,
         "special": 3,
         "ATP_min": 300,
-        "ATP_max": 420
+        "ATP_max": 420,
+        "combo_locked": false
     },
     {
         "name": "Laconium Axe",
@@ -1487,7 +1635,8 @@ const weapon_data = [
         "grind": 25,
         "special": 14,
         "ATP_min": 700,
-        "ATP_max": 750
+        "ATP_max": 750,
+        "combo_locked": false
     },
     {
         "name": "Chain Sawd",
@@ -1497,7 +1646,8 @@ const weapon_data = [
         "grind": 15,
         "special": 4,
         "ATP_min": 500,
-        "ATP_max": 525
+        "ATP_max": 525,
+        "combo_locked": false
     },
     {
         "name": "Caduceus",
@@ -1507,7 +1657,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 360,
-        "ATP_max": 360
+        "ATP_max": 360,
+        "combo_locked": false
     },
     {
         "name": "Mercurius Rod",
@@ -1517,7 +1668,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 390,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Sting Tip",
@@ -1527,7 +1679,8 @@ const weapon_data = [
         "grind": 30,
         "special": 7,
         "ATP_min": 170,
-        "ATP_max": 170
+        "ATP_max": 170,
+        "combo_locked": false
     },
     {
         "name": "Magical Piece",
@@ -1537,7 +1690,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 240,
-        "ATP_max": 240
+        "ATP_max": 240,
+        "combo_locked": false
     },
     {
         "name": "Technical Crozier",
@@ -1547,7 +1701,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 130,
-        "ATP_max": 135
+        "ATP_max": 135,
+        "combo_locked": false
     },
     {
         "name": "Suppressed Gun",
@@ -1557,7 +1712,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 260,
-        "ATP_max": 270
+        "ATP_max": 270,
+        "combo_locked": false
     },
     {
         "name": "Ancient Saber",
@@ -1567,7 +1723,8 @@ const weapon_data = [
         "grind": 9,
         "special": 11,
         "ATP_min": 531,
-        "ATP_max": 544
+        "ATP_max": 544,
+        "combo_locked": false
     },
     {
         "name": "Harisen Battle Fan",
@@ -1577,7 +1734,8 @@ const weapon_data = [
         "grind": 0,
         "special": 21,
         "ATP_min": 310,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Yamigarasu",
@@ -1587,7 +1745,8 @@ const weapon_data = [
         "grind": 0,
         "special": 34,
         "ATP_min": 580,
-        "ATP_max": 650
+        "ATP_max": 650,
+        "combo_locked": false
     },
     {
         "name": "Akiko's Wok",
@@ -1597,7 +1756,8 @@ const weapon_data = [
         "grind": 0,
         "special": 26,
         "ATP_min": 210,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Toy Hammer",
@@ -1607,7 +1767,8 @@ const weapon_data = [
         "grind": 0,
         "special": 14,
         "ATP_min": 1,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Red Saber",
@@ -1617,7 +1778,8 @@ const weapon_data = [
         "grind": 78,
         "special": 3,
         "ATP_min": 450,
-        "ATP_max": 489
+        "ATP_max": 489,
+        "combo_locked": false
     },
     {
         "name": "Meteor Cudgel",
@@ -1627,7 +1789,8 @@ const weapon_data = [
         "grind": 15,
         "special": 18,
         "ATP_min": 300,
-        "ATP_max": 560
+        "ATP_max": 560,
+        "combo_locked": false
     },
     {
         "name": "Monkey King Bar",
@@ -1637,7 +1800,8 @@ const weapon_data = [
         "grind": 25,
         "special": 39,
         "ATP_min": 380,
-        "ATP_max": 390
+        "ATP_max": 390,
+        "combo_locked": false
     },
     {
         "name": "Black King Bar",
@@ -1647,7 +1811,8 @@ const weapon_data = [
         "grind": 80,
         "special": 39,
         "ATP_min": 590,
-        "ATP_max": 600
+        "ATP_max": 600,
+        "combo_locked": false
     },
     {
         "name": "Double Cannon",
@@ -1657,7 +1822,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 620,
-        "ATP_max": 650
+        "ATP_max": 650,
+        "combo_locked": false
     },
     {
         "name": "Girasole",
@@ -1667,7 +1833,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 500,
-        "ATP_max": 550
+        "ATP_max": 550,
+        "combo_locked": false
     },
     {
         "name": "Huge Battle Fan",
@@ -1677,7 +1844,8 @@ const weapon_data = [
         "grind": 0,
         "special": 37,
         "ATP_min": 255,
-        "ATP_max": 412
+        "ATP_max": 412,
+        "combo_locked": false
     },
     {
         "name": "Tsumikiri J-Sword",
@@ -1687,7 +1855,8 @@ const weapon_data = [
         "grind": 50,
         "special": 41,
         "ATP_min": 700,
-        "ATP_max": 756
+        "ATP_max": 756,
+        "combo_locked": false
     },
     {
         "name": "Sealed J-Sword",
@@ -1697,7 +1866,8 @@ const weapon_data = [
         "grind": 0,
         "special": 34,
         "ATP_min": 400,
-        "ATP_max": 525
+        "ATP_max": 525,
+        "combo_locked": false
     },
     {
         "name": "Red Sword",
@@ -1707,7 +1877,8 @@ const weapon_data = [
         "grind": 52,
         "special": 21,
         "ATP_min": 400,
-        "ATP_max": 611
+        "ATP_max": 611,
+        "combo_locked": false
     },
     {
         "name": "Crazy Tune",
@@ -1717,7 +1888,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 200,
-        "ATP_max": 255
+        "ATP_max": 255,
+        "combo_locked": false
     },
     {
         "name": "Twin Chakram",
@@ -1727,7 +1899,8 @@ const weapon_data = [
         "grind": 20,
         "special": 33,
         "ATP_min": 245,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Wok of Akiko's Shop",
@@ -1737,7 +1910,8 @@ const weapon_data = [
         "grind": 0,
         "special": 12,
         "ATP_min": 170,
-        "ATP_max": 160
+        "ATP_max": 160,
+        "combo_locked": false
     },
     {
         "name": "Lavis Blade",
@@ -1747,7 +1921,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 380,
-        "ATP_max": 450
+        "ATP_max": 450,
+        "combo_locked": false
     },
     {
         "name": "Red Dagger",
@@ -1757,7 +1932,8 @@ const weapon_data = [
         "grind": 65,
         "special": 7,
         "ATP_min": 245,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Madam's Parasol",
@@ -1767,7 +1943,8 @@ const weapon_data = [
         "grind": 0,
         "special": 13,
         "ATP_min": 215,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Madam's Umbrella",
@@ -1777,7 +1954,8 @@ const weapon_data = [
         "grind": 0,
         "special": 14,
         "ATP_min": 210,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Imperial Pick",
@@ -1787,7 +1965,8 @@ const weapon_data = [
         "grind": 9,
         "special": 39,
         "ATP_min": 280,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Berdysh",
@@ -1797,7 +1976,8 @@ const weapon_data = [
         "grind": 25,
         "special": 41,
         "ATP_min": 270,
-        "ATP_max": 290
+        "ATP_max": 290,
+        "combo_locked": false
     },
     {
         "name": "Red Partisan",
@@ -1807,7 +1987,8 @@ const weapon_data = [
         "grind": 40,
         "special": 17,
         "ATP_min": 290,
-        "ATP_max": 295
+        "ATP_max": 295,
+        "combo_locked": false
     },
     {
         "name": "Flight Cutter",
@@ -1817,7 +1998,8 @@ const weapon_data = [
         "grind": 9,
         "special": 39,
         "ATP_min": 250,
-        "ATP_max": 260
+        "ATP_max": 260,
+        "combo_locked": false
     },
     {
         "name": "Flight Fan",
@@ -1827,7 +2009,8 @@ const weapon_data = [
         "grind": 15,
         "special": 10,
         "ATP_min": 185,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Red Slicer",
@@ -1837,7 +2020,8 @@ const weapon_data = [
         "grind": 45,
         "special": 25,
         "ATP_min": 190,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Handgun: Guld",
@@ -1847,7 +2031,8 @@ const weapon_data = [
         "grind": 9,
         "special": 7,
         "ATP_min": 370,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Master Raven",
@@ -1857,7 +2042,8 @@ const weapon_data = [
         "grind": 9,
         "special": 9,
         "ATP_min": 350,
-        "ATP_max": 380
+        "ATP_max": 380,
+        "combo_locked": true
     },
     {
         "name": "Handgun: Milla",
@@ -1867,7 +2053,8 @@ const weapon_data = [
         "grind": 9,
         "special": 3,
         "ATP_min": 350,
-        "ATP_max": 360
+        "ATP_max": 360,
+        "combo_locked": false
     },
     {
         "name": "Last Swan",
@@ -1877,7 +2064,8 @@ const weapon_data = [
         "grind": 9,
         "special": 10,
         "ATP_min": 80,
-        "ATP_max": 90
+        "ATP_max": 90,
+        "combo_locked": false
     },
     {
         "name": "Red Handgun",
@@ -1887,7 +2075,8 @@ const weapon_data = [
         "grind": 50,
         "special": 29,
         "ATP_min": 300,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Frozen Shooter",
@@ -1897,7 +2086,8 @@ const weapon_data = [
         "grind": 9,
         "special": 41,
         "ATP_min": 240,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Snow Queen",
@@ -1907,7 +2097,8 @@ const weapon_data = [
         "grind": 18,
         "special": 41,
         "ATP_min": 330,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": true
     },
     {
         "name": "Anti Android Rifle",
@@ -1917,7 +2108,8 @@ const weapon_data = [
         "grind": 9,
         "special": 30,
         "ATP_min": 330,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": false
     },
     {
         "name": "Rocket Punch",
@@ -1927,7 +2119,8 @@ const weapon_data = [
         "grind": 50,
         "special": 26,
         "ATP_min": 50,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": true
     },
     {
         "name": "Samba Maracas",
@@ -1937,7 +2130,8 @@ const weapon_data = [
         "grind": 0,
         "special": 37,
         "ATP_min": 5,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "Twin Psychogun",
@@ -1947,7 +2141,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 35,
-        "ATP_max": 40
+        "ATP_max": 40,
+        "combo_locked": false
     },
     {
         "name": "Drill Launcher",
@@ -1957,7 +2152,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 180,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Guld Milla",
@@ -1967,7 +2163,8 @@ const weapon_data = [
         "grind": 9,
         "special": 4,
         "ATP_min": 180,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Dual Bird",
@@ -1977,7 +2174,8 @@ const weapon_data = [
         "grind": 21,
         "special": 11,
         "ATP_min": 200,
-        "ATP_max": 210
+        "ATP_max": 210,
+        "combo_locked": false
     },
     {
         "name": "Red Mechgun",
@@ -1987,7 +2185,8 @@ const weapon_data = [
         "grind": 30,
         "special": 37,
         "ATP_min": 50,
-        "ATP_max": 50
+        "ATP_max": 50,
+        "combo_locked": false
     },
     {
         "name": "Belra Cannon",
@@ -1997,7 +2196,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 400,
-        "ATP_max": 500
+        "ATP_max": 500,
+        "combo_locked": true
     },
     {
         "name": "Panzer Faust",
@@ -2007,7 +2207,8 @@ const weapon_data = [
         "grind": 9,
         "special": 38,
         "ATP_min": 350,
-        "ATP_max": 500
+        "ATP_max": 500,
+        "combo_locked": false
     },
     {
         "name": "Iron Faust",
@@ -2017,7 +2218,8 @@ const weapon_data = [
         "grind": 18,
         "special": 38,
         "ATP_min": 500,
-        "ATP_max": 580
+        "ATP_max": 580,
+        "combo_locked": true
     },
     {
         "name": "Summit Moon",
@@ -2027,7 +2229,8 @@ const weapon_data = [
         "grind": 9,
         "special": 30,
         "ATP_min": 270,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Windmill",
@@ -2037,7 +2240,8 @@ const weapon_data = [
         "grind": 9,
         "special": 41,
         "ATP_min": 300,
-        "ATP_max": 310
+        "ATP_max": 310,
+        "combo_locked": false
     },
     {
         "name": "Evil Curst",
@@ -2047,7 +2251,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 444,
-        "ATP_max": 666
+        "ATP_max": 666,
+        "combo_locked": true
     },
     {
         "name": "Flower Cane",
@@ -2057,7 +2262,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 168,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Hildebear's Cane",
@@ -2067,7 +2273,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 220,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Hildeblue's Cane",
@@ -2077,7 +2284,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 290,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Rabbit Wand",
@@ -2087,7 +2295,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 120,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Plantain Leaf",
@@ -2097,7 +2306,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 219,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Fatsia",
@@ -2107,7 +2317,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 219,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Demonic Fork",
@@ -2117,7 +2328,8 @@ const weapon_data = [
         "grind": 0,
         "special": 11,
         "ATP_min": 325,
-        "ATP_max": 340
+        "ATP_max": 340,
+        "combo_locked": false
     },
     {
         "name": "Striker of Chao",
@@ -2127,7 +2339,8 @@ const weapon_data = [
         "grind": 0,
         "special": 22,
         "ATP_min": 300,
-        "ATP_max": 325
+        "ATP_max": 325,
+        "combo_locked": false
     },
     {
         "name": "Broom",
@@ -2137,7 +2350,8 @@ const weapon_data = [
         "grind": 0,
         "special": 37,
         "ATP_min": 90,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Prophets of Motav",
@@ -2147,7 +2361,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 90,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "The Sigh of a God",
@@ -2157,7 +2372,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 175,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": true
     },
     {
         "name": "Twinkle Star",
@@ -2167,7 +2383,8 @@ const weapon_data = [
         "grind": 0,
         "special": 30,
         "ATP_min": 175,
-        "ATP_max": 175
+        "ATP_max": 175,
+        "combo_locked": false
     },
     {
         "name": "Plantain Fan",
@@ -2177,7 +2394,8 @@ const weapon_data = [
         "grind": 40,
         "special": 41,
         "ATP_min": 95,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "Twin Blaze",
@@ -2187,7 +2405,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 300,
-        "ATP_max": 520
+        "ATP_max": 520,
+        "combo_locked": false
     },
     {
         "name": "Marina's Bag",
@@ -2197,7 +2416,8 @@ const weapon_data = [
         "grind": 0,
         "special": 37,
         "ATP_min": 10,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Dragon's Claw",
@@ -2207,7 +2427,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 550,
-        "ATP_max": 580
+        "ATP_max": 580,
+        "combo_locked": false
     },
     {
         "name": "Panther's Claw",
@@ -2217,7 +2438,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 180,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "S-Red's Blade",
@@ -2227,7 +2449,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 340,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": false
     },
     {
         "name": "Plantain Huge Fan",
@@ -2237,7 +2460,8 @@ const weapon_data = [
         "grind": 9,
         "special": 41,
         "ATP_min": 265,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Chameleon Scythe",
@@ -2247,7 +2471,8 @@ const weapon_data = [
         "grind": 0,
         "special": 8,
         "ATP_min": 80,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Yasminkov 3000R",
@@ -2257,7 +2482,8 @@ const weapon_data = [
         "grind": 60,
         "special": 0,
         "ATP_min": 370,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Ano Rifle",
@@ -2267,7 +2493,8 @@ const weapon_data = [
         "grind": 15,
         "special": 21,
         "ATP_min": 350,
-        "ATP_max": 380
+        "ATP_max": 380,
+        "combo_locked": false
     },
     {
         "name": "Baranz Launcher",
@@ -2277,7 +2504,8 @@ const weapon_data = [
         "grind": 30,
         "special": 12,
         "ATP_min": 230,
-        "ATP_max": 240
+        "ATP_max": 240,
+        "combo_locked": false
     },
     {
         "name": "Branch of Pakupaku",
@@ -2287,7 +2515,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 240,
-        "ATP_max": 267
+        "ATP_max": 267,
+        "combo_locked": false
     },
     {
         "name": "Heart of Poumn",
@@ -2297,7 +2526,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 695,
-        "ATP_max": 715
+        "ATP_max": 715,
+        "combo_locked": false
     },
     {
         "name": "Yasminkov 2000H",
@@ -2307,7 +2537,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 340,
-        "ATP_max": 340
+        "ATP_max": 340,
+        "combo_locked": false
     },
     {
         "name": "Yasminkov 7000V",
@@ -2317,7 +2548,8 @@ const weapon_data = [
         "grind": 25,
         "special": 0,
         "ATP_min": 370,
-        "ATP_max": 450
+        "ATP_max": 450,
+        "combo_locked": false
     },
     {
         "name": "Yasminkov 9000M",
@@ -2327,7 +2559,8 @@ const weapon_data = [
         "grind": 10,
         "special": 0,
         "ATP_min": 40,
-        "ATP_max": 80
+        "ATP_max": 80,
+        "combo_locked": false
     },
     {
         "name": "Maser Beam",
@@ -2337,7 +2570,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 230,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Power Maser",
@@ -2347,7 +2581,8 @@ const weapon_data = [
         "grind": 20,
         "special": 0,
         "ATP_min": 270,
-        "ATP_max": 270
+        "ATP_max": 270,
+        "combo_locked": true
     },
     {
         "name": "Game Magazine",
@@ -2357,7 +2592,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "LOGiN",
@@ -2367,7 +2603,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 5
+        "ATP_max": 5,
+        "combo_locked": false
     },
     {
         "name": "Flower Bouquet",
@@ -2377,7 +2614,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "ES Saber",
@@ -2387,7 +2625,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "ES Sword",
@@ -2397,7 +2636,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "ES Blade",
@@ -2407,7 +2647,8 @@ const weapon_data = [
         "grind": 200,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Partisan",
@@ -2417,7 +2658,8 @@ const weapon_data = [
         "grind": 200,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Slicer",
@@ -2427,7 +2669,8 @@ const weapon_data = [
         "grind": 140,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Gun",
@@ -2437,7 +2680,8 @@ const weapon_data = [
         "grind": 200,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Rifle",
@@ -2447,7 +2691,8 @@ const weapon_data = [
         "grind": 220,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Mechgun",
@@ -2457,7 +2702,8 @@ const weapon_data = [
         "grind": 50,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Shot",
@@ -2467,7 +2713,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Cane",
@@ -2477,7 +2724,8 @@ const weapon_data = [
         "grind": 120,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Rod",
@@ -2487,7 +2735,8 @@ const weapon_data = [
         "grind": 180,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Wand",
@@ -2497,7 +2746,8 @@ const weapon_data = [
         "grind": 100,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Twin",
@@ -2507,7 +2757,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 50,
-        "ATP_max": 50
+        "ATP_max": 50,
+        "combo_locked": false
     },
     {
         "name": "ES Claw",
@@ -2517,7 +2768,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 180,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "ES Bazooka",
@@ -2527,7 +2779,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Needle",
@@ -2537,7 +2790,8 @@ const weapon_data = [
         "grind": 70,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Scythe",
@@ -2547,7 +2801,8 @@ const weapon_data = [
         "grind": 180,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Moon",
@@ -2557,7 +2812,8 @@ const weapon_data = [
         "grind": 120,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Psychogun",
@@ -2567,7 +2823,8 @@ const weapon_data = [
         "grind": 50,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Punch",
@@ -2577,7 +2834,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": true
     },
     {
         "name": "ES Windmill",
@@ -2587,7 +2845,8 @@ const weapon_data = [
         "grind": 120,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Hammer",
@@ -2597,7 +2856,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "ES Harisen",
@@ -2607,7 +2867,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "ES Katana",
@@ -2617,7 +2878,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 170,
-        "ATP_max": 170
+        "ATP_max": 170,
+        "combo_locked": false
     },
     {
         "name": "ES J-Cutter",
@@ -2627,7 +2889,8 @@ const weapon_data = [
         "grind": 150,
         "special": 0,
         "ATP_min": 25,
-        "ATP_max": 25
+        "ATP_max": 25,
+        "combo_locked": false
     },
     {
         "name": "Musashi",
@@ -2637,7 +2900,8 @@ const weapon_data = [
         "grind": 40,
         "special": 14,
         "ATP_min": 330,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": false
     },
     {
         "name": "Yamato",
@@ -2647,7 +2911,8 @@ const weapon_data = [
         "grind": 60,
         "special": 18,
         "ATP_min": 380,
-        "ATP_max": 390
+        "ATP_max": 390,
+        "combo_locked": false
     },
     {
         "name": "Asuka",
@@ -2657,7 +2922,8 @@ const weapon_data = [
         "grind": 30,
         "special": 26,
         "ATP_min": 560,
-        "ATP_max": 570
+        "ATP_max": 570,
+        "combo_locked": false
     },
     {
         "name": "Sange & Yasha",
@@ -2667,7 +2933,8 @@ const weapon_data = [
         "grind": 30,
         "special": 4,
         "ATP_min": 640,
-        "ATP_max": 650
+        "ATP_max": 650,
+        "combo_locked": false
     },
     {
         "name": "Sange",
@@ -2677,7 +2944,8 @@ const weapon_data = [
         "grind": 0,
         "special": 3,
         "ATP_min": 500,
-        "ATP_max": 550
+        "ATP_max": 550,
+        "combo_locked": false
     },
     {
         "name": "Yasha",
@@ -2687,7 +2955,8 @@ const weapon_data = [
         "grind": 0,
         "special": 3,
         "ATP_min": 500,
-        "ATP_max": 550
+        "ATP_max": 550,
+        "combo_locked": false
     },
     {
         "name": "Kamui",
@@ -2697,7 +2966,8 @@ const weapon_data = [
         "grind": 0,
         "special": 33,
         "ATP_min": 650,
-        "ATP_max": 650
+        "ATP_max": 650,
+        "combo_locked": false
     },
     {
         "name": "Photon Launcher",
@@ -2707,7 +2977,8 @@ const weapon_data = [
         "grind": 9,
         "special": 20,
         "ATP_min": 210,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Guilty Light",
@@ -2717,7 +2988,8 @@ const weapon_data = [
         "grind": 18,
         "special": 18,
         "ATP_min": 240,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Red Scorpio",
@@ -2727,7 +2999,8 @@ const weapon_data = [
         "grind": 50,
         "special": 26,
         "ATP_min": 280,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Phonon Maser",
@@ -2737,7 +3010,8 @@ const weapon_data = [
         "grind": 36,
         "special": 36,
         "ATP_min": 350,
-        "ATP_max": 360
+        "ATP_max": 360,
+        "combo_locked": false
     },
     {
         "name": "Talis",
@@ -2747,7 +3021,8 @@ const weapon_data = [
         "grind": 9,
         "special": 6,
         "ATP_min": 120,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "Mahu",
@@ -2757,7 +3032,8 @@ const weapon_data = [
         "grind": 9,
         "special": 7,
         "ATP_min": 120,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Hitogata",
@@ -2767,7 +3043,8 @@ const weapon_data = [
         "grind": 9,
         "special": 7,
         "ATP_min": 150,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Dancing Hitogata",
@@ -2777,7 +3054,8 @@ const weapon_data = [
         "grind": 0,
         "special": 8,
         "ATP_min": 350,
-        "ATP_max": 354
+        "ATP_max": 354,
+        "combo_locked": false
     },
     {
         "name": "Kunai",
@@ -2787,7 +3065,8 @@ const weapon_data = [
         "grind": 0,
         "special": 22,
         "ATP_min": 95,
-        "ATP_max": 175
+        "ATP_max": 175,
+        "combo_locked": false
     },
     {
         "name": "NUG2000-Bazooka",
@@ -2797,7 +3076,8 @@ const weapon_data = [
         "grind": 32,
         "special": 0,
         "ATP_min": 400,
-        "ATP_max": 660
+        "ATP_max": 660,
+        "combo_locked": true
     },
     {
         "name": "S-Berill's Hands No. 0",
@@ -2807,7 +3087,8 @@ const weapon_data = [
         "grind": 35,
         "special": 37,
         "ATP_min": 158,
-        "ATP_max": 197
+        "ATP_max": 197,
+        "combo_locked": false
     },
     {
         "name": "S-Berill's Hands No. 1",
@@ -2817,7 +3098,8 @@ const weapon_data = [
         "grind": 15,
         "special": 38,
         "ATP_min": 320,
-        "ATP_max": 321
+        "ATP_max": 321,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3060)",
@@ -2827,7 +3109,8 @@ const weapon_data = [
         "grind": 12,
         "special": 0,
         "ATP_min": 135,
-        "ATP_max": 243
+        "ATP_max": 243,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3064)",
@@ -2837,7 +3120,8 @@ const weapon_data = [
         "grind": 16,
         "special": 0,
         "ATP_min": 164,
-        "ATP_max": 248
+        "ATP_max": 248,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3067)",
@@ -2847,7 +3131,8 @@ const weapon_data = [
         "grind": 21,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 256
+        "ATP_max": 256,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3073)",
@@ -2857,7 +3142,8 @@ const weapon_data = [
         "grind": 34,
         "special": 0,
         "ATP_min": 197,
-        "ATP_max": 262
+        "ATP_max": 262,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3077)",
@@ -2867,7 +3153,8 @@ const weapon_data = [
         "grind": 32,
         "special": 0,
         "ATP_min": 121,
-        "ATP_max": 255
+        "ATP_max": 255,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3082)",
@@ -2877,7 +3164,8 @@ const weapon_data = [
         "grind": 12,
         "special": 0,
         "ATP_min": 211,
-        "ATP_max": 273
+        "ATP_max": 273,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3083)",
@@ -2887,7 +3175,8 @@ const weapon_data = [
         "grind": 11,
         "special": 0,
         "ATP_min": 261,
-        "ATP_max": 283
+        "ATP_max": 283,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3084)",
@@ -2897,7 +3186,8 @@ const weapon_data = [
         "grind": 85,
         "special": 13,
         "ATP_min": 300,
-        "ATP_max": 320
+        "ATP_max": 320,
+        "combo_locked": false
     },
     {
         "name": "Flowen's Sword (3079)",
@@ -2907,7 +3197,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 290,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3062)",
@@ -2917,7 +3208,8 @@ const weapon_data = [
         "grind": 18,
         "special": 0,
         "ATP_min": 112,
-        "ATP_max": 124
+        "ATP_max": 124,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3067)",
@@ -2927,7 +3219,8 @@ const weapon_data = [
         "grind": 14,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 143
+        "ATP_max": 143,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3069 Chris)",
@@ -2937,7 +3230,8 @@ const weapon_data = [
         "grind": 36,
         "special": 0,
         "ATP_min": 189,
-        "ATP_max": 202
+        "ATP_max": 202,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3064)",
@@ -2947,7 +3241,8 @@ const weapon_data = [
         "grind": 18,
         "special": 0,
         "ATP_min": 289,
-        "ATP_max": 301
+        "ATP_max": 301,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3069 Torato)",
@@ -2957,7 +3252,8 @@ const weapon_data = [
         "grind": 21,
         "special": 0,
         "ATP_min": 130,
-        "ATP_max": 149
+        "ATP_max": 149,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3073)",
@@ -2967,7 +3263,8 @@ const weapon_data = [
         "grind": 24,
         "special": 0,
         "ATP_min": 212,
-        "ATP_max": 231
+        "ATP_max": 231,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3070)",
@@ -2977,7 +3274,8 @@ const weapon_data = [
         "grind": 29,
         "special": 0,
         "ATP_min": 93,
-        "ATP_max": 109
+        "ATP_max": 109,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3075)",
@@ -2987,7 +3285,8 @@ const weapon_data = [
         "grind": 85,
         "special": 0,
         "ATP_min": 300,
-        "ATP_max": 340
+        "ATP_max": 340,
+        "combo_locked": false
     },
     {
         "name": "DB's Saber (3077)",
@@ -2997,7 +3296,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 140,
-        "ATP_max": 168
+        "ATP_max": 168,
+        "combo_locked": false
     },
     {
         "name": "Gi Gue Bazooka",
@@ -3007,7 +3307,8 @@ const weapon_data = [
         "grind": 0,
         "special": 21,
         "ATP_min": 520,
-        "ATP_max": 620
+        "ATP_max": 620,
+        "combo_locked": true
     },
     {
         "name": "Guardianna",
@@ -3017,7 +3318,8 @@ const weapon_data = [
         "grind": 9,
         "special": 13,
         "ATP_min": 200,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": false
     },
     {
         "name": "Viridia Card",
@@ -3027,7 +3329,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Greenill Card",
@@ -3037,7 +3340,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Skyly Card",
@@ -3047,7 +3351,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Bluefull Card",
@@ -3057,7 +3362,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Purplenum Card",
@@ -3067,7 +3373,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Pinkal Card",
@@ -3077,7 +3384,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Redria Card",
@@ -3087,7 +3395,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Oran Card",
@@ -3097,7 +3406,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Yellowboze Card",
@@ -3107,7 +3417,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Whitill Card",
@@ -3117,7 +3428,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Morning Glory",
@@ -3127,7 +3439,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 450,
-        "ATP_max": 500
+        "ATP_max": 500,
+        "combo_locked": false
     },
     {
         "name": "Partisan of Lightning",
@@ -3137,7 +3450,8 @@ const weapon_data = [
         "grind": 60,
         "special": 30,
         "ATP_min": 370,
-        "ATP_max": 410
+        "ATP_max": 410,
+        "combo_locked": false
     },
     {
         "name": "Gal Wind",
@@ -3147,7 +3461,8 @@ const weapon_data = [
         "grind": 15,
         "special": 41,
         "ATP_min": 270,
-        "ATP_max": 310
+        "ATP_max": 310,
+        "combo_locked": false
     },
     {
         "name": "Zanba",
@@ -3157,7 +3472,8 @@ const weapon_data = [
         "grind": 38,
         "special": 14,
         "ATP_min": 310,
-        "ATP_max": 438
+        "ATP_max": 438,
+        "combo_locked": false
     },
     {
         "name": "Rika's Claw",
@@ -3167,7 +3483,8 @@ const weapon_data = [
         "grind": 35,
         "special": 30,
         "ATP_min": 600,
-        "ATP_max": 680
+        "ATP_max": 680,
+        "combo_locked": false
     },
     {
         "name": "Angel Harp",
@@ -3177,7 +3494,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 300,
-        "ATP_max": 320
+        "ATP_max": 320,
+        "combo_locked": false
     },
     {
         "name": "Demolition Comet",
@@ -3187,7 +3505,8 @@ const weapon_data = [
         "grind": 25,
         "special": 39,
         "ATP_min": 530,
-        "ATP_max": 530
+        "ATP_max": 530,
+        "combo_locked": false
     },
     {
         "name": "Nei's Claw",
@@ -3197,7 +3516,8 @@ const weapon_data = [
         "grind": 0,
         "special": 13,
         "ATP_min": 756,
-        "ATP_max": 756
+        "ATP_max": 756,
+        "combo_locked": false
     },
     {
         "name": "Rainbow Baton",
@@ -3207,7 +3527,8 @@ const weapon_data = [
         "grind": 24,
         "special": 38,
         "ATP_min": 300,
-        "ATP_max": 320
+        "ATP_max": 320,
+        "combo_locked": false
     },
     {
         "name": "Dark Flow",
@@ -3217,7 +3538,8 @@ const weapon_data = [
         "grind": 0,
         "special": 41,
         "ATP_min": 756,
-        "ATP_max": 900
+        "ATP_max": 900,
+        "combo_locked": true
     },
     {
         "name": "Dark Meteor",
@@ -3227,7 +3549,8 @@ const weapon_data = [
         "grind": 25,
         "special": 41,
         "ATP_min": 150,
-        "ATP_max": 280
+        "ATP_max": 280,
+        "combo_locked": true
     },
     {
         "name": "Dark Bridge",
@@ -3237,7 +3560,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 185,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "G-Assassin's Sabers",
@@ -3247,7 +3571,8 @@ const weapon_data = [
         "grind": 25,
         "special": 22,
         "ATP_min": 350,
-        "ATP_max": 360
+        "ATP_max": 360,
+        "combo_locked": false
     },
     {
         "name": "Rappy's Fan",
@@ -3257,7 +3582,8 @@ const weapon_data = [
         "grind": 32,
         "special": 37,
         "ATP_min": 140,
-        "ATP_max": 146
+        "ATP_max": 146,
+        "combo_locked": false
     },
     {
         "name": "Booma's Claw",
@@ -3267,7 +3593,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 300,
-        "ATP_max": 315
+        "ATP_max": 315,
+        "combo_locked": false
     },
     {
         "name": "Gobooma's Claw",
@@ -3277,7 +3604,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 330,
-        "ATP_max": 345
+        "ATP_max": 345,
+        "combo_locked": false
     },
     {
         "name": "Gigobooma's Claw",
@@ -3287,7 +3615,8 @@ const weapon_data = [
         "grind": 55,
         "special": 0,
         "ATP_min": 450,
-        "ATP_max": 500
+        "ATP_max": 500,
+        "combo_locked": false
     },
     {
         "name": "Ruby Bullet",
@@ -3297,7 +3626,8 @@ const weapon_data = [
         "grind": 0,
         "special": 26,
         "ATP_min": 350,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": false
     },
     {
         "name": "Amore Rose",
@@ -3307,7 +3637,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 5,
-        "ATP_max": 7
+        "ATP_max": 7,
+        "combo_locked": false
     },
     {
         "name": "ES Swords",
@@ -3317,7 +3648,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 180,
-        "ATP_max": 180
+        "ATP_max": 180,
+        "combo_locked": false
     },
     {
         "name": "ES Launcher",
@@ -3327,7 +3659,8 @@ const weapon_data = [
         "grind": 180,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Cards",
@@ -3337,7 +3670,8 @@ const weapon_data = [
         "grind": 150,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "ES Knuckle",
@@ -3347,7 +3681,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 250,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "ES Axe",
@@ -3357,7 +3692,8 @@ const weapon_data = [
         "grind": 250,
         "special": 0,
         "ATP_min": 200,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Slicer of Fanatic",
@@ -3367,7 +3703,8 @@ const weapon_data = [
         "grind": 30,
         "special": 40,
         "ATP_min": 340,
-        "ATP_max": 360
+        "ATP_max": 360,
+        "combo_locked": false
     },
     {
         "name": "Lame d'Argent",
@@ -3377,7 +3714,8 @@ const weapon_data = [
         "grind": 35,
         "special": 0,
         "ATP_min": 430,
-        "ATP_max": 465
+        "ATP_max": 465,
+        "combo_locked": false
     },
     {
         "name": "Excalibur",
@@ -3387,7 +3725,8 @@ const weapon_data = [
         "grind": 0,
         "special": 14,
         "ATP_min": 900,
-        "ATP_max": 950
+        "ATP_max": 950,
+        "combo_locked": false
     },
     {
         "name": "Rage de Feu",
@@ -3397,7 +3736,8 @@ const weapon_data = [
         "grind": 9,
         "special": 0,
         "ATP_min": 175,
-        "ATP_max": 185
+        "ATP_max": 185,
+        "combo_locked": false
     },
     {
         "name": "Daisy Chain",
@@ -3407,7 +3747,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 350,
-        "ATP_max": 410
+        "ATP_max": 410,
+        "combo_locked": false
     },
     {
         "name": "Ophelie Seize",
@@ -3417,7 +3758,8 @@ const weapon_data = [
         "grind": 9,
         "special": 38,
         "ATP_min": 390,
-        "ATP_max": 420
+        "ATP_max": 420,
+        "combo_locked": false
     },
     {
         "name": "Mille Marteaux",
@@ -3427,7 +3769,8 @@ const weapon_data = [
         "grind": 12,
         "special": 41,
         "ATP_min": 200,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "Le Cogneur",
@@ -3437,7 +3780,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 310,
-        "ATP_max": 330
+        "ATP_max": 330,
+        "combo_locked": false
     },
     {
         "name": "Commander Blade",
@@ -3447,7 +3791,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 560,
-        "ATP_max": 585
+        "ATP_max": 585,
+        "combo_locked": false
     },
     {
         "name": "Vivienne",
@@ -3457,7 +3802,8 @@ const weapon_data = [
         "grind": 50,
         "special": 5,
         "ATP_min": 575,
-        "ATP_max": 590
+        "ATP_max": 590,
+        "combo_locked": false
     },
     {
         "name": "Kusanagi",
@@ -3467,7 +3813,8 @@ const weapon_data = [
         "grind": 32,
         "special": 40,
         "ATP_min": 560,
-        "ATP_max": 575
+        "ATP_max": 575,
+        "combo_locked": false
     },
     {
         "name": "Sacred Duster",
@@ -3477,7 +3824,8 @@ const weapon_data = [
         "grind": 25,
         "special": 18,
         "ATP_min": 660,
-        "ATP_max": 730
+        "ATP_max": 730,
+        "combo_locked": false
     },
     {
         "name": "Guren",
@@ -3487,7 +3835,8 @@ const weapon_data = [
         "grind": 0,
         "special": 26,
         "ATP_min": 790,
-        "ATP_max": 840
+        "ATP_max": 840,
+        "combo_locked": false
     },
     {
         "name": "Shouren",
@@ -3497,7 +3846,8 @@ const weapon_data = [
         "grind": 0,
         "special": 18,
         "ATP_min": 820,
-        "ATP_max": 870
+        "ATP_max": 870,
+        "combo_locked": false
     },
     {
         "name": "Jizai",
@@ -3507,7 +3857,8 @@ const weapon_data = [
         "grind": 40,
         "special": 34,
         "ATP_min": 800,
-        "ATP_max": 810
+        "ATP_max": 810,
+        "combo_locked": false
     },
     {
         "name": "Flamberge",
@@ -3517,7 +3868,8 @@ const weapon_data = [
         "grind": 30,
         "special": 13,
         "ATP_min": 575,
-        "ATP_max": 590
+        "ATP_max": 590,
+        "combo_locked": false
     },
     {
         "name": "Yunchang",
@@ -3527,7 +3879,8 @@ const weapon_data = [
         "grind": 25,
         "special": 14,
         "ATP_min": 300,
-        "ATP_max": 350
+        "ATP_max": 350,
+        "combo_locked": false
     },
     {
         "name": "Snake Spire",
@@ -3537,7 +3890,8 @@ const weapon_data = [
         "grind": 15,
         "special": 33,
         "ATP_min": 290,
-        "ATP_max": 310
+        "ATP_max": 310,
+        "combo_locked": false
     },
     {
         "name": "Flapjack Flapper",
@@ -3547,7 +3901,8 @@ const weapon_data = [
         "grind": 25,
         "special": 4,
         "ATP_min": 350,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": false
     },
     {
         "name": "Getsugasan",
@@ -3557,7 +3912,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 190,
-        "ATP_max": 230
+        "ATP_max": 230,
+        "combo_locked": false
     },
     {
         "name": "Maguwa",
@@ -3567,7 +3923,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 230,
-        "ATP_max": 250
+        "ATP_max": 250,
+        "combo_locked": false
     },
     {
         "name": "Heaven Striker",
@@ -3577,7 +3934,8 @@ const weapon_data = [
         "grind": 20,
         "special": 14,
         "ATP_min": 550,
-        "ATP_max": 660
+        "ATP_max": 660,
+        "combo_locked": false
     },
     {
         "name": "Cannon Rouge",
@@ -3587,7 +3945,8 @@ const weapon_data = [
         "grind": 30,
         "special": 38,
         "ATP_min": 600,
-        "ATP_max": 750
+        "ATP_max": 750,
+        "combo_locked": true
     },
     {
         "name": "Meteor Rouge",
@@ -3597,7 +3956,8 @@ const weapon_data = [
         "grind": 0,
         "special": 40,
         "ATP_min": 265,
-        "ATP_max": 315
+        "ATP_max": 315,
+        "combo_locked": true
     },
     {
         "name": "Solferino",
@@ -3607,7 +3967,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 250,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": true
     },
     {
         "name": "Clio",
@@ -3617,7 +3978,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 660,
-        "ATP_max": 690
+        "ATP_max": 690,
+        "combo_locked": false
     },
     {
         "name": "Siren Glass Hammer",
@@ -3627,7 +3989,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 390,
-        "ATP_max": 450
+        "ATP_max": 450,
+        "combo_locked": true
     },
     {
         "name": "Glide Divine",
@@ -3637,7 +4000,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 185,
-        "ATP_max": 400
+        "ATP_max": 400,
+        "combo_locked": true
     },
     {
         "name": "Shichishito",
@@ -3647,7 +4011,8 @@ const weapon_data = [
         "grind": 0,
         "special": 31,
         "ATP_min": 500,
-        "ATP_max": 560
+        "ATP_max": 560,
+        "combo_locked": false
     },
     {
         "name": "Murasame",
@@ -3657,7 +4022,8 @@ const weapon_data = [
         "grind": 0,
         "special": 31,
         "ATP_min": 420,
-        "ATP_max": 435
+        "ATP_max": 435,
+        "combo_locked": false
     },
     {
         "name": "Daylight Scar",
@@ -3667,7 +4033,8 @@ const weapon_data = [
         "grind": 25,
         "special": 14,
         "ATP_min": 500,
-        "ATP_max": 550
+        "ATP_max": 550,
+        "combo_locked": false
     },
     {
         "name": "Decalog",
@@ -3677,7 +4044,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "5th Anniv. Blade",
@@ -3687,7 +4055,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 152,
-        "ATP_max": 282
+        "ATP_max": 282,
+        "combo_locked": false
     },
     {
         "name": "Tyrell's Parasol",
@@ -3697,7 +4066,8 @@ const weapon_data = [
         "grind": 0,
         "special": 12,
         "ATP_min": 250,
-        "ATP_max": 300
+        "ATP_max": 300,
+        "combo_locked": false
     },
     {
         "name": "Akiko's Cleaver",
@@ -3707,7 +4077,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 1,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Tanegashima",
@@ -3717,7 +4088,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 320,
-        "ATP_max": 410
+        "ATP_max": 410,
+        "combo_locked": true
     },
     {
         "name": "Tree Clippers",
@@ -3727,7 +4099,8 @@ const weapon_data = [
         "grind": 0,
         "special": 12,
         "ATP_min": 1,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Nice Shot",
@@ -3737,7 +4110,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 180,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "Ano Bazooka",
@@ -3747,7 +4121,8 @@ const weapon_data = [
         "grind": 15,
         "special": 0,
         "ATP_min": 350,
-        "ATP_max": 370
+        "ATP_max": 370,
+        "combo_locked": true
     },
     {
         "name": "Synthesizer",
@@ -3757,7 +4132,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "Bamboo Spear",
@@ -3767,7 +4143,8 @@ const weapon_data = [
         "grind": 0,
         "special": 13,
         "ATP_min": 2,
-        "ATP_max": 255
+        "ATP_max": 255,
+        "combo_locked": false
     },
     {
         "name": "Kan'ei Tsuho",
@@ -3777,7 +4154,8 @@ const weapon_data = [
         "grind": 0,
         "special": 12,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "Jitte",
@@ -3787,7 +4165,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 123
+        "ATP_max": 123,
+        "combo_locked": false
     },
     {
         "name": "Butterfly Net",
@@ -3797,7 +4176,8 @@ const weapon_data = [
         "grind": 0,
         "special": 10,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "Syringe",
@@ -3807,7 +4187,8 @@ const weapon_data = [
         "grind": 0,
         "special": 11,
         "ATP_min": 95,
-        "ATP_max": 175
+        "ATP_max": 175,
+        "combo_locked": false
     },
     {
         "name": "Battledore",
@@ -3817,7 +4198,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "Racket",
@@ -3827,7 +4209,8 @@ const weapon_data = [
         "grind": 0,
         "special": 0,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "Hammer",
@@ -3837,7 +4220,8 @@ const weapon_data = [
         "grind": 0,
         "special": 33,
         "ATP_min": 120,
-        "ATP_max": 185
+        "ATP_max": 185,
+        "combo_locked": false
     },
     {
         "name": "Great Bouquet",
@@ -3847,7 +4231,8 @@ const weapon_data = [
         "grind": 0,
         "special": 38,
         "ATP_min": 1,
-        "ATP_max": 1
+        "ATP_max": 1,
+        "combo_locked": false
     },
     {
         "name": "TypeSA/Saber",
@@ -3857,7 +4242,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 120,
-        "ATP_max": 120
+        "ATP_max": 120,
+        "combo_locked": false
     },
     {
         "name": "TypeSL/Saber",
@@ -3867,7 +4253,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 130
+        "ATP_max": 130,
+        "combo_locked": false
     },
     {
         "name": "TypeSL/Slicer",
@@ -3877,7 +4264,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 140,
-        "ATP_max": 140
+        "ATP_max": 140,
+        "combo_locked": false
     },
     {
         "name": "TypeSL/Claw",
@@ -3887,7 +4275,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "TypeSL/Katana",
@@ -3897,7 +4286,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 140
+        "ATP_max": 140,
+        "combo_locked": false
     },
     {
         "name": "TypeJS/Saber",
@@ -3907,7 +4297,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 140
+        "ATP_max": 140,
+        "combo_locked": false
     },
     {
         "name": "TypeJS/Slicer",
@@ -3917,7 +4308,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 130
+        "ATP_max": 130,
+        "combo_locked": false
     },
     {
         "name": "TypeJS/J-Sword",
@@ -3927,7 +4319,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 130,
-        "ATP_max": 130
+        "ATP_max": 130,
+        "combo_locked": false
     },
     {
         "name": "TypeSW/Sword",
@@ -3937,7 +4330,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "TypeSW/Slicer",
@@ -3947,7 +4341,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 140
+        "ATP_max": 140,
+        "combo_locked": false
     },
     {
         "name": "TypeSW/J-Sword",
@@ -3957,7 +4352,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 100,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "TypeRO/Sword",
@@ -3967,7 +4363,8 @@ const weapon_data = [
         "grind": 100,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 100
+        "ATP_max": 100,
+        "combo_locked": false
     },
     {
         "name": "TypeRO/Halbert",
@@ -3977,7 +4374,8 @@ const weapon_data = [
         "grind": 100,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 80
+        "ATP_max": 80,
+        "combo_locked": false
     },
     {
         "name": "TypeRO/Rod",
@@ -3987,7 +4385,8 @@ const weapon_data = [
         "grind": 90,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeBL/Blade",
@@ -3997,7 +4396,8 @@ const weapon_data = [
         "grind": 90,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeKN/Blade",
@@ -4007,7 +4407,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 180,
-        "ATP_max": 200
+        "ATP_max": 200,
+        "combo_locked": false
     },
     {
         "name": "TypeKN/Claw",
@@ -4017,7 +4418,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 180,
-        "ATP_max": 220
+        "ATP_max": 220,
+        "combo_locked": false
     },
     {
         "name": "TypeHA/Halbert",
@@ -4027,7 +4429,8 @@ const weapon_data = [
         "grind": 90,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeHA/Rod",
@@ -4037,7 +4440,8 @@ const weapon_data = [
         "grind": 80,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeDS/D.Saber",
@@ -4047,7 +4451,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 30,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "TypeDS/Rod",
@@ -4057,7 +4462,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "TypeDS/Wand",
@@ -4067,7 +4473,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 30
+        "ATP_max": 30,
+        "combo_locked": false
     },
     {
         "name": "TypeCL/Claw",
@@ -4077,7 +4484,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 170,
-        "ATP_max": 170
+        "ATP_max": 170,
+        "combo_locked": false
     },
     {
         "name": "TypeSS/Swords",
@@ -4087,7 +4495,8 @@ const weapon_data = [
         "grind": 125,
         "special": 0,
         "ATP_min": 150,
-        "ATP_max": 150
+        "ATP_max": 150,
+        "combo_locked": false
     },
     {
         "name": "TypeGU/Hand",
@@ -4097,7 +4506,8 @@ const weapon_data = [
         "grind": 95,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeGU/Mechgun",
@@ -4107,7 +4517,8 @@ const weapon_data = [
         "grind": 90,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeRI/Rifle",
@@ -4117,7 +4528,8 @@ const weapon_data = [
         "grind": 100,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeME/Mechgun",
@@ -4127,7 +4539,8 @@ const weapon_data = [
         "grind": 30,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeSH/Shot",
@@ -4137,7 +4550,8 @@ const weapon_data = [
         "grind": 60,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     },
     {
         "name": "TypeWA/Wand",
@@ -4147,7 +4561,8 @@ const weapon_data = [
         "grind": 60,
         "special": 0,
         "ATP_min": 10,
-        "ATP_max": 10
+        "ATP_max": 10,
+        "combo_locked": false
     }
 ];
 

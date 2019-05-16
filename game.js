@@ -38,6 +38,12 @@ const glitch_combos = (function make_glitch_combos() {
     return combos;
 })();
 
+const locked_combos = [
+    [ATTACK_N],
+    [ATTACK_H],
+    [ATTACK_S]
+];
+
 function modify_attack_kind(orig_kind, special) {
     if (orig_kind === ATTACK_S) {
         switch (special) {
@@ -85,8 +91,9 @@ function combo_kill(
         evp_mod -= 0.15;
     }
     const effective_evp = defender.EVP * evp_mod;
+    const combo_set = weapon.combo_locked ? locked_combos : normal_combos;
     combos:
-    for (const combo of normal_combos) {
+    for (const combo of combo_set) {
         let combo_dmg = 0;
         // check combo accuracy
         for (let step = 0; step < combo.length; step++) {

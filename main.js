@@ -146,6 +146,7 @@ function create_weapon_settings() {
         }
         UI.weapon_stats.special = UI.weapon_special_select.value = weapon.special;
         UI.weapon_stats.kind = UI.weapon_kind_select.value = weapon.kind;
+        UI.weapon_stats.combo_locked = UI.weapon_combo_locked_checkbox.checked = weapon.combo_locked;
         update_enemy_table();
     });
     const weapon = weapon_data[UI.selected_weapon];
@@ -163,6 +164,14 @@ function create_weapon_settings() {
     });
     UI.weapon_special_select = special_select.toDOM();
     UI.weapon_kind_select = kind_select.toDOM();
+    const combo_locked = create_labeled_input("Combo Locked", v("input", {type: "checkbox"}));
+    combo_locked.container.attrs.classList.add("slim");
+    UI.weapon_stats.combo_locked = weapon.combo_locked;
+    combo_locked.input.addEventListener("change", event => {
+        UI.weapon_stats.combo_locked = event.target.selected;
+        update_enemy_table();
+    });
+    UI.weapon_combo_locked_checkbox = combo_locked.input.toDOM();
     return v("fieldset", {class: "weapon_settings"}, [
         v("legend", "Weapon"),
         create_labeled_input("Presets", weapon_select).container,
@@ -181,7 +190,9 @@ function create_weapon_settings() {
             UI.weapon_stats, Object.assign({}, UI.weapon_stats, weapon),
             UI.weapon_stat_elements,
             update_weapon_attributes
-        ))
+        )),
+        create_vertical_rule(),
+        combo_locked.container
     ]);
 }
 
