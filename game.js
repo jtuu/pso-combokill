@@ -60,7 +60,7 @@ function combo_kill(
     weapon, armor, shield,
     shifta_level, zalure_level,
     frozen, paralyzed,
-    accuracy_treshold) {
+    accuracy_threshold) {
     const attribute_mod = weapon[weapon_attribute_keys[defender.attribute]] / 100 + 1;
     const base_atp = attacker.ATP;
     const grind_atp = weapon.grind * 2;
@@ -92,7 +92,7 @@ function combo_kill(
         for (let step = 0; step < combo.length; step++) {
             const attack_kind = modify_attack_kind(combo[step], weapon.special);
             const accuracy = attack_accuracy(attack_kind, step, total_ata, effective_evp);
-            if (accuracy < accuracy_treshold) {
+            if (accuracy < accuracy_threshold) {
                 continue combos;
             }
         }

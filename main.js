@@ -26,7 +26,7 @@ const UI = {
     other_params: {
         shifta_level: 30,
         zalure_level: 30,
-        accuracy_treshold: 100,
+        accuracy_threshold: 100,
         frozen: false,
         paralyzed: false
     },
@@ -69,7 +69,7 @@ async function update_enemy_table(select_value_key, event) {
             UI.weapon_stats, UI.armor_stats, UI.shield_stats,
             UI.other_params.shifta_level, UI.other_params.zalure_level,
             UI.other_params.frozen, UI.other_params.paralyzed,
-            UI.other_params.accuracy_treshold);
+            UI.other_params.accuracy_threshold);
         v("div", {class: "enemy_cell " + (combo === null ? "combo_fail" : "combo_success")}, [
             v("div", [
                 v("div", enemy.name)

@@ -450,22 +450,22 @@ const shield_stat_names = [];
 shield_stat_names[ARMOR_STAT_ATP] = "Shield ATP";
 shield_stat_names[ARMOR_STAT_ATA] = "Shield ATA";
 
-const OTHER_PARAM_SHIFTA            = 0;
-const OTHER_PARAM_ZALURE            = 1;
-const OTHER_PARAM_ACCURACY_TRESHOLD = 2;
+const OTHER_PARAM_SHIFTA             = 0;
+const OTHER_PARAM_ZALURE             = 1;
+const OTHER_PARAM_ACCURACY_THRESHOLD = 2;
 
 const other_params = [
     OTHER_PARAM_SHIFTA,
     OTHER_PARAM_ZALURE,
-    OTHER_PARAM_ACCURACY_TRESHOLD
+    OTHER_PARAM_ACCURACY_THRESHOLD
 ];
 
 const other_param_keys = [];
-other_param_keys[OTHER_PARAM_SHIFTA]            = "shifta_level";
-other_param_keys[OTHER_PARAM_ZALURE]            = "zalure_level";
-other_param_keys[OTHER_PARAM_ACCURACY_TRESHOLD] = "accuracy_treshold";
+other_param_keys[OTHER_PARAM_SHIFTA]             = "shifta_level";
+other_param_keys[OTHER_PARAM_ZALURE]             = "zalure_level";
+other_param_keys[OTHER_PARAM_ACCURACY_THRESHOLD] = "accuracy_threshold";
 
 const other_param_names = [];
-other_param_names[OTHER_PARAM_SHIFTA]            = "Shifta Level";
-other_param_names[OTHER_PARAM_ZALURE]            = "Zalure Level";
-other_param_names[OTHER_PARAM_ACCURACY_TRESHOLD] = "Accuracy Treshold %";
+other_param_names[OTHER_PARAM_SHIFTA]             = "Shifta Level";
+other_param_names[OTHER_PARAM_ZALURE]             = "Zalure Level";
+other_param_names[OTHER_PARAM_ACCURACY_THRESHOLD] = "Accuracy Threshold %";
