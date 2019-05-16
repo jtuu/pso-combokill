@@ -2036,7 +2036,7 @@ const weapon_data = [
     },
     {
         "name": "Master Raven",
-        "kind": 10,
+        "kind": 12,
         "id": 16897,
         "ATA": 52,
         "grind": 9,
@@ -2058,7 +2058,7 @@ const weapon_data = [
     },
     {
         "name": "Last Swan",
-        "kind": 10,
+        "kind": 12,
         "id": 17153,
         "ATA": 32,
         "grind": 9,
