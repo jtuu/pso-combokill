@@ -36,8 +36,10 @@ function create_select(values, names, default_val) {
 
 function create_labeled_input(label_text, input = v("input")) {
     const container = v("div", {class: "labeled_input_container"}, [
-        v("label", label_text),
-        input
+        v("label", [
+            v("div", label_text),
+            input
+        ])
     ]);
     return {
         container,

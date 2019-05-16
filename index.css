@@ -63,11 +63,11 @@ body {
     font-size: 0.8em;
 }
 
-.labeled_input_container > label, .labeled_input_container > input {
+.labeled_input_container > label > div, .labeled_input_container > label > input {
     width: 6em;
 }
 
-.labeled_input_container.slim > label, .labeled_input_container.slim > input {
+.labeled_input_container.slim > label > div, .labeled_input_container.slim > label > input {
     width: 3em;
 }
 
