@@ -67,7 +67,7 @@ function combo_kill(
     const equip_atp = (weapon.ATP_min + armor.ATP + shield.ATP + grind_atp) * attribute_mod;
     let shifta_atp = 0;
     if (shifta_level > 0) {
-        const shifta_mod = ((shifta_level - 1) * 1.3 + 10) / 100 + 1;
+        const shifta_mod = ((shifta_level - 1) * 1.3 + 10) / 100;
         shifta_atp = base_atp * shifta_mod + ((weapon.ATP_max + grind_atp) - (weapon.ATP_min + grind_atp)) * shifta_mod;
     }
     const total_atp = base_atp + equip_atp + shifta_atp;
