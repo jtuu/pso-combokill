@@ -67,6 +67,10 @@ body {
     width: 6em;
 }
 
+.labeled_input_container.slim > label, .labeled_input_container.slim > input {
+    width: 3em;
+}
+
 .vertical_rule {
     display: inline;
     margin-left: 8px;

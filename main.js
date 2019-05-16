@@ -298,6 +298,18 @@ function update_shield_stats(stat, event) {
 }
 
 function create_other_settings() {
+    const frozen = create_labeled_input("Frozen", v("input", {type: "checkbox"}));
+    const paralyzed = create_labeled_input("Paralyzed", v("input", {type: "checkbox"}));
+    frozen.container.attrs.classList.add("slim");
+    paralyzed.container.attrs.classList.add("slim");
+    frozen.input.addEventListener("change", event => {
+        UI.other_params.frozen = event.target.checked;
+        update_enemy_table();
+    });
+    paralyzed.input.addEventListener("change", event => {
+        UI.other_params.paralyzed = event.target.checked;
+        update_enemy_table();
+    });
     return v("fieldset", [
         v("legend", "Other"),
         ...other_params.map(param => create_text_field(
@@ -305,7 +317,9 @@ function create_other_settings() {
             UI.other_params, UI.other_params,
             UI.other_param_elements,
             update_other_settings
-        ))
+        )),
+        frozen.container,
+        paralyzed.container
     ]);
 }
 
